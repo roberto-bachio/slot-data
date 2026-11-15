@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-11-15",
+  "machines": [
+    {
+      "id": "smaslo_hanabi",
+      "name": "スマスロ ハナビ",
+      "maker": "アクロス",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_hanabi.json",
+      "version": 1,
+      "ocrVerified": true,
+      "keywords": [
+        "ハナビ",
+        "花火",
+        "はなび",
+        "HANABI"
+      ]
+    }
+  ]
+}
