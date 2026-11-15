@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "id": "shin_hanabi",
+  "name": "新ハナビ",
+  "maker": "アクロス",
+  "ocrTitles": [
+    "新ハナビ"
+  ],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 102.0,
+    "2": 104.0,
+    "5": 106.5,
+    "6": 109.0
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総プレイ数",
+      "ocrLabel": "総プレイ数",
+      "section": "基本情報"
+    },
+    {
+      "id": "rt1Games",
+      "label": "花火チャレンジプレイ数",
+      "section": "基本情報",
+      "ocrDerive": {
+        "fromRateOf": "rt1Hazure"
+      }
+    },
+    {
+      "id": "rt2Games",
+      "label": "花火GAMEプレイ数",
+      "section": "基本情報",
+      "ocrDerive": {
+        "fromRateOf": "rt2Hazure"
+      }
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "ocrLabel": "総BB",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "ocrLabel": "RB",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "furinA",
+      "label": "風鈴A",
+      "ocrLabel": "風鈴A",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "furinB",
+      "label": "風鈴B",
+      "ocrLabel": "風鈴B",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "koriA",
+      "label": "氷A",
+      "ocrLabel": "氷A",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherryA2",
+      "label": "チェリーA2",
+      "ocrLabel": "チェリーA2",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherryB",
+      "label": "チェリーB",
+      "ocrLabel": "チェリーB",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rt1Hazure",
+      "label": "花火チャレンジ中はずれ",
+      "ocrLabel": "花火チャレンジ中はずれ",
+      "section": "RT詳細",
+      "rateBase": "rt1Games"
+    },
+    {
+      "id": "rt2Hazure",
+      "label": "花火GAME中はずれ",
+      "ocrLabel": "花火GAME中はずれ",
+      "section": "RT詳細",
+      "rateBase": "rt2Games"
+    },
+    {
+      "id": "bbFurinA",
+      "label": "BB中 風鈴(中段)",
+      "ocrLabel": "風鈴中段揃い",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "bbFurinB",
+      "label": "BB中 風鈴(斜め)",
+      "ocrLabel": "風鈴斜め揃い",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "bbBarake",
+      "label": "BB中 バラケ目",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "rbGames",
+      "label": "RB中ゲーム数",
+      "section": "RB中詳細(小役)",
+      "ocrDerive": {
+        "fromRateOf": "rbOneMai"
+      }
+    },
+    {
+      "id": "rbOneMai",
+      "label": "RB中 1枚役",
+      "ocrLabel": "1枚役",
+      "section": "RB中詳細(小役)"
+    },
+    {
+      "id": "rbHazure",
+      "label": "RB中 はずれ",
+      "section": "RB中詳細(小役)"
+    },
+    {
+      "id": "rbPeace",
+      "label": "RB終了画面ピース花火",
+      "section": "その他"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 277.7,
+                "2": 268.6,
+                "5": 256.0,
+                "6": 248.2
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 356.2,
+                "2": 331.0,
+                "5": 306.2,
+                "6": 280.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総プレイ数(ユニメモの表示と同じ)。RT中に変わるのはリプレイとはずれの確率で、小役の確率は通常時と同じ",
+          "outcomes": [
+            {
+              "counter": "furinA",
+              "denoms": {
+                "1": 15.3,
+                "2": 14.9,
+                "5": 14.5,
+                "6": 14.1
+              }
+            },
+            {
+              "counter": "furinB",
+              "denoms": {
+                "1": 15.3,
+                "2": 15.6,
+                "5": 15.3,
+                "6": 15.1
+              }
+            },
+            {
+              "counter": "koriA",
+              "denoms": {
+                "1": 52.9,
+                "2": 53.5,
+                "5": 49.6,
+                "6": 50.8
+              }
+            },
+            {
+              "counter": "cherryA2",
+              "denoms": {
+                "1": 21.0,
+                "2": 19.3,
+                "5": 20.6,
+                "6": 19.9
+              }
+            },
+            {
+              "counter": "cherryB",
+              "denoms": {
+                "1": 282.5,
+                "2": 281.3,
+                "5": 276.5,
+                "6": 274.2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rt",
+      "name": "RT中",
+      "groups": [
+        {
+          "id": "rt1",
+          "name": "花火チャレンジ中はずれ",
+          "trials": {
+            "plus": [
+              "rt1Games"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "rt1Hazure",
+              "denoms": {
+                "1": 6.0,
+                "2": 5.8,
+                "5": 5.3,
+                "6": 5.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "rt2",
+          "name": "花火GAME中はずれ",
+          "trials": {
+            "plus": [
+              "rt2Games"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "rt2Hazure",
+              "denoms": {
+                "1": 13.4,
+                "2": 12.4,
+                "5": 10.1,
+                "6": 9.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "bbKoyaku",
+          "name": "BB中小役",
+          "trials": {
+            "plus": [
+              "bbFurinA",
+              "bbFurinB",
+              "bbBarake"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bbFurinB",
+              "denoms": {
+                "1": 11.0,
+                "2": 9.0,
+                "5": 11.0,
+                "6": 9.0
+              }
+            },
+            {
+              "counter": "bbBarake",
+              "defaultZero": true,
+              "denoms": {
+                "1": 16384,
+                "2": 16384,
+                "5": 16384,
+                "6": 655.4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rbIn",
+      "name": "RB中",
+      "groups": [
+        {
+          "id": "rbKoyaku",
+          "name": "RB中小役",
+          "trials": {
+            "plus": [
+              "rbGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "rbOneMai",
+              "denoms": {
+                "1": 8.0,
+                "2": 8.0,
+                "5": 7.0,
+                "6": 7.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "rbHazure",
+      "name": "RB中 はずれ",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "rbPeace",
+      "name": "RB終了画面ピース花火",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/s_shinhanabi/0",
+    "https://pachiseven.jp/machines/6305/cutout/4"
+  ]
+}

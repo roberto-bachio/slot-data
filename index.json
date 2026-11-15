@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "machines": [
     {
       "id": "smaslo_hanabi",
@@ -20,6 +20,47 @@
         "花火",
         "はなび",
         "HANABI"
+      ]
+    },
+    {
+      "id": "shin_hanabi",
+      "name": "新ハナビ",
+      "maker": "アクロス",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/shin_hanabi.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ハナビ",
+        "花火",
+        "はなび",
+        "シンハナビ",
+        "HANABI"
+      ]
+    },
+    {
+      "id": "versus_revise",
+      "name": "バーサスリヴァイズ",
+      "maker": "エレコ",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/versus_revise.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "バーサス",
+        "リヴァイズ",
+        "リバイズ",
+        "VERSUS"
       ]
     }
   ]
