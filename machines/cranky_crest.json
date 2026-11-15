@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "id": "cranky_crest",
+  "name": "クランキークレスト",
+  "maker": "ミズホ",
+  "ocrTitles": [
+    "クランキークレスト"
+  ],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 100.5,
+    "2": 102.0,
+    "5": 105.2,
+    "6": 108.0
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総プレイ数",
+      "ocrLabel": "総プレイ数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "ocrLabel": "総BB",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "ocrLabel": "RB",
+      "section": "ボーナス",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bellA",
+      "label": "ベルA",
+      "ocrLabel": "ベルA",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bellB",
+      "label": "ベルB",
+      "ocrLabel": "ベルB",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suikaA",
+      "label": "スイカA",
+      "ocrLabel": "スイカA",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suikaB",
+      "label": "スイカB",
+      "ocrLabel": "スイカB",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherryB",
+      "label": "チェリーB",
+      "ocrLabel": "チェリーB",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "lampDia",
+      "label": "BB中 ♦点灯",
+      "ocrLabel": "♦点灯",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "lampHeart",
+      "label": "BB中 ♥点灯",
+      "ocrLabel": "♥点灯",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "lampSpade",
+      "label": "BB中 ♠点灯",
+      "ocrLabel": "♠点灯",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "lampClub",
+      "label": "BB中 ♣点灯",
+      "ocrLabel": "♣点灯",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "rbGames",
+      "label": "RB中ゲーム数",
+      "section": "RB中詳細",
+      "ocrDerive": {
+        "fromRateOf": "rbOneMai"
+      }
+    },
+    {
+      "id": "rbOneMai",
+      "label": "RB中 1枚役",
+      "ocrLabel": "1枚役",
+      "section": "RB中詳細"
+    },
+    {
+      "id": "rbEndRed",
+      "label": "RB終了画面 赤",
+      "ocrLabel": "終了画面【赤】",
+      "section": "RB中詳細"
+    },
+    {
+      "id": "rbEndBlue",
+      "label": "RB終了画面 青",
+      "ocrLabel": "終了画面【青】",
+      "section": "RB中詳細"
+    },
+    {
+      "id": "rbEndSpecial",
+      "label": "RB終了画面 特殊",
+      "section": "RB中詳細"
+    },
+    {
+      "id": "rbEndGold",
+      "label": "RB終了画面 金",
+      "section": "RB中詳細"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 275.4,
+                "2": 275.4,
+                "5": 262.1,
+                "6": 254.0
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 407.1,
+                "2": 370.3,
+                "5": 336.1,
+                "6": 304.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総プレイ数(ユニメモの表示と同じ)",
+          "outcomes": [
+            {
+              "counter": "bellA",
+              "denoms": {
+                "1": 12.7,
+                "2": 12.4,
+                "5": 12.1,
+                "6": 11.8
+              }
+            },
+            {
+              "counter": "bellB",
+              "denoms": {
+                "1": 25.4,
+                "2": 26.5,
+                "5": 25.1,
+                "6": 26.2
+              }
+            },
+            {
+              "counter": "suikaA",
+              "denoms": {
+                "1": 64.4,
+                "2": 58.4,
+                "5": 64.1,
+                "6": 58.1
+              }
+            },
+            {
+              "counter": "suikaB",
+              "denoms": {
+                "1": 193.3,
+                "2": 175.2,
+                "5": 192.2,
+                "6": 174.3
+              }
+            },
+            {
+              "counter": "cherryB",
+              "denoms": {
+                "1": 36.2,
+                "2": 35.8,
+                "5": 35.8,
+                "6": 35.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "bbLamp",
+          "name": "ルーレットランプ",
+          "trials": {
+            "plus": [
+              "lampDia",
+              "lampHeart",
+              "lampSpade",
+              "lampClub"
+            ]
+          },
+          "note": "分母は点灯回数の合計。♦は残り(49.8 / 40.6 / 47.8 / 38.3%)",
+          "outcomes": [
+            {
+              "counter": "lampHeart",
+              "asPercent": true,
+              "denoms": {
+                "1": 2.457,
+                "2": 2.0121,
+                "5": 2.5575,
+                "6": 2.1368
+              }
+            },
+            {
+              "counter": "lampSpade",
+              "asPercent": true,
+              "denoms": {
+                "1": 12.0482,
+                "2": 10.3093,
+                "5": 9.009,
+                "6": 8.0
+              }
+            },
+            {
+              "counter": "lampClub",
+              "asPercent": true,
+              "denoms": {
+                "1": 83.3333,
+                "2": 16384,
+                "5": 50.0,
+                "6": 43.4783
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rbIn",
+      "name": "RB中",
+      "groups": [
+        {
+          "id": "rbKoyaku",
+          "name": "RB中 1枚役",
+          "trials": {
+            "plus": [
+              "rbGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "rbOneMai",
+              "denoms": {
+                "1": 8.0,
+                "2": 7.3,
+                "5": 6.6,
+                "6": 6.6
+              }
+            }
+          ]
+        },
+        {
+          "id": "rbEnd",
+          "name": "終了画面 赤と青の比率",
+          "trials": {
+            "plus": [
+              "rbEndRed",
+              "rbEndBlue"
+            ]
+          },
+          "note": "赤と青の出た回数だけで比べる。赤は設定1・6、青は設定2・5で出やすい",
+          "outcomes": [
+            {
+              "counter": "rbEndRed",
+              "asPercent": true,
+              "denoms": {
+                "1": 1.6667,
+                "2": 2.5,
+                "5": 2.5,
+                "6": 1.6667
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "lampClub",
+      "name": "BB中 ♣点灯",
+      "meaning": "設定2以外",
+      "excludes": [
+        2
+      ]
+    },
+    {
+      "counter": "rbEndSpecial",
+      "name": "RB終了画面 特殊",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "rbEndGold",
+      "name": "RB終了画面 金",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/s_crankycrest/0/",
+    "https://pachiseven.jp/machines/6845/cutout/4"
+  ]
+}

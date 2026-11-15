@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "new_getter_mouse",
+  "name": "ニューゲッターマウス",
+  "maker": "エレコ",
+  "ocrTitles": [
+    "ニューゲッターマウス"
+  ],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 100.2,
+    "2": 102.0,
+    "5": 106.5,
+    "6": 111.1
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総プレイ数",
+      "ocrLabel": "総プレイ数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "ocrLabel": "総BB",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "ocrLabel": "総RB",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "orangeA",
+      "label": "オレンジA",
+      "ocrLabel": "オレンジA",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "orangeB",
+      "label": "オレンジB",
+      "ocrLabel": "オレンジB",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suika",
+      "label": "スイカ",
+      "ocrLabel": "スイカ",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "ocrLabel": "チェリー",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bbGames",
+      "label": "BB中ゲーム数",
+      "section": "ボーナス中詳細",
+      "ocrDerive": {
+        "fromRateOf": "bbNaname"
+      }
+    },
+    {
+      "id": "bbNaname",
+      "label": "BB中 斜めオレンジ",
+      "ocrLabel": "BB中斜めオレンジ",
+      "section": "ボーナス中詳細",
+      "rateBase": "bbGames"
+    },
+    {
+      "id": "rbIchiro",
+      "label": "RB中 イチロー祝福",
+      "ocrLabel": "RB中イチロー祝福",
+      "section": "RB中演出詳細"
+    },
+    {
+      "id": "lampGet",
+      "label": "告知ランプ \"GET\"",
+      "section": "その他"
+    },
+    {
+      "id": "lamp666",
+      "label": "告知ランプ \"666\"",
+      "section": "その他"
+    },
+    {
+      "id": "endChu",
+      "label": "BB終了画面 chu",
+      "section": "その他"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 240.9,
+                "2": 234.1,
+                "5": 215.6,
+                "6": 199.2
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 252.1,
+                "2": 240.1,
+                "5": 221.4,
+                "6": 199.2
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総プレイ数(ユニメモの表示と同じ)",
+          "outcomes": [
+            {
+              "counter": "orangeA",
+              "denoms": {
+                "1": 20.5,
+                "2": 20.3,
+                "5": 19.6,
+                "6": 18.9
+              }
+            },
+            {
+              "counter": "orangeB",
+              "denoms": {
+                "1": 20.4,
+                "2": 20.2,
+                "5": 19.5,
+                "6": 18.9
+              }
+            },
+            {
+              "counter": "suika",
+              "denoms": {
+                "1": 59.9,
+                "2": 59.0,
+                "5": 56.5,
+                "6": 54.9
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 14.0,
+                "2": 13.8,
+                "5": 13.5,
+                "6": 13.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "bbKoyaku",
+          "name": "BB中 斜めオレンジ",
+          "trials": {
+            "plus": [
+              "bbGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bbNaname",
+              "denoms": {
+                "1": 8.0,
+                "2": 6.8,
+                "5": 8.0,
+                "6": 6.8
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "rbIchiro",
+      "name": "RB中 イチロー祝福",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "lampGet",
+      "name": "告知ランプ \"GET\"",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "lamp666",
+      "name": "告知ランプ \"666\"",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "counter": "endChu",
+      "name": "BB終了画面 chu",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/s_new_gettermouse/0/",
+    "https://pachiseven.jp/machines/6549/cutout/4",
+    "https://chonborista.com/slot/universal-slot/168364/"
+  ]
+}

@@ -62,6 +62,46 @@
         "リバイズ",
         "VERSUS"
       ]
+    },
+    {
+      "id": "new_getter_mouse",
+      "name": "ニューゲッターマウス",
+      "maker": "エレコ",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/new_getter_mouse.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ゲッターマウス",
+        "ゲッタマ",
+        "ネズミ",
+        "GETTER"
+      ]
+    },
+    {
+      "id": "cranky_crest",
+      "name": "クランキークレスト",
+      "maker": "ミズホ",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/cranky_crest.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "クランキー",
+        "クレスト",
+        "コンドル",
+        "CRANKY"
+      ]
     }
   ]
 }
