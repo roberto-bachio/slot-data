@@ -136,7 +136,7 @@
         6
       ],
       "file": "machines/im_juggler_ex.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "アイム",
@@ -160,7 +160,7 @@
         6
       ],
       "file": "machines/neo_im_juggler_ex.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ネオアイム",
@@ -183,7 +183,7 @@
         6
       ],
       "file": "machines/my_juggler_v.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "マイジャグ",
@@ -207,7 +207,7 @@
         6
       ],
       "file": "machines/funky_juggler_2.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ファンキー",
@@ -230,7 +230,7 @@
         6
       ],
       "file": "machines/happy_juggler_v3.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ハッピー",
@@ -239,7 +239,7 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用"
     },
     {
       "id": "gogo_juggler_3",
@@ -254,7 +254,7 @@
         6
       ],
       "file": "machines/gogo_juggler_3.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ゴーゴー",
@@ -263,7 +263,7 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用"
     },
     {
       "id": "juggler_girls_ss",
@@ -278,7 +278,7 @@
         6
       ],
       "file": "machines/juggler_girls_ss.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ガールズ",
@@ -287,7 +287,7 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用"
     },
     {
       "id": "mr_juggler",
@@ -302,7 +302,7 @@
         6
       ],
       "file": "machines/mr_juggler.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ミスター",
@@ -310,7 +310,7 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用"
     },
     {
       "id": "ultra_miracle_juggler",

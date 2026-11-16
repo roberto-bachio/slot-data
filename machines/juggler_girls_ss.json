@@ -12,7 +12,14 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 97.0,
+    "2": 97.9,
+    "3": 99.9,
+    "4": 102.1,
+    "5": 104.0,
+    "6": 107.5
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -29,6 +36,12 @@
       "id": "rb",
       "label": "REG回数",
       "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "budou",
+      "label": "ぶどう",
+      "section": "小役",
       "rateBase": "totalGames"
     }
   ],
@@ -69,12 +82,37 @@
               }
             }
           ]
+        },
+        {
+          "id": "koyaku",
+          "name": "ぶどう確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "ぶどう確率はメーカー発表値ではなく、解析サイトの独自調査による値",
+          "outcomes": [
+            {
+              "counter": "budou",
+              "denoms": {
+                "1": 5.98,
+                "2": 5.98,
+                "3": 5.98,
+                "4": 5.98,
+                "5": 5.88,
+                "6": 5.83
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "hints": [],
   "sources": [
-    "https://1geki.jp/slot/s_jag_girls/0/"
-  ]
+    "https://1geki.jp/slot/s_jag_girls/0/",
+    "https://nana-press.com/post/1623268/2"
+  ],
+  "version": 2
 }
