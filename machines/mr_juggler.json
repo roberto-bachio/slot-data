@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "mr_juggler",
+  "name": "ミスタージャグラー",
+  "maker": "北電子",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 268.6,
+                "2": 267.5,
+                "3": 260.1,
+                "4": 249.2,
+                "5": 240.9,
+                "6": 237.4
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 374.5,
+                "2": 354.2,
+                "3": 331.0,
+                "4": 291.3,
+                "5": 257.0,
+                "6": 237.4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "sources": [
+    "https://1geki.jp/slot/s_mrjuggler/0/"
+  ]
+}

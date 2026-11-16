@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "funky_juggler_2",
+  "name": "ファンキージャグラー2",
+  "maker": "北電子",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "budou",
+      "label": "ぶどう",
+      "section": "小役",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 266.4,
+                "2": 259.0,
+                "3": 256.0,
+                "4": 249.2,
+                "5": 240.1,
+                "6": 219.9
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 439.8,
+                "2": 407.1,
+                "3": 366.1,
+                "4": 322.8,
+                "5": 299.3,
+                "6": 262.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "ぶどう確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "ぶどう確率はメーカー発表値ではなく、実機シミュレーションによる実戦値",
+          "outcomes": [
+            {
+              "counter": "budou",
+              "denoms": {
+                "1": 5.96,
+                "2": 5.92,
+                "3": 5.88,
+                "4": 5.87,
+                "5": 5.79,
+                "6": 5.72
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "sources": [
+    "https://1geki.jp/slot/s_funkyjuggler2/0/"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "king_hanahana_30",
+  "name": "キングハナハナ-30",
+  "maker": "パイオニア",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "regEndBlue",
+      "label": "REG終了時ランプ 青",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndYellow",
+      "label": "REG終了時ランプ 黄",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndGreen",
+      "label": "REG終了時ランプ 緑",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndRed",
+      "label": "REG終了時ランプ 赤",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndRainbow",
+      "label": "REG終了時ランプ 虹",
+      "section": "REG終了時"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 292,
+                "2": 280,
+                "3": 268,
+                "4": 257,
+                "5": 244,
+                "6": 232
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 489,
+                "2": 452,
+                "3": 420,
+                "4": 390,
+                "5": 360,
+                "6": 332
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "regEndBlue",
+      "name": "REG終了時ランプ 青",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "regEndYellow",
+      "name": "REG終了時ランプ 黄",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "regEndGreen",
+      "name": "REG終了時ランプ 緑",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "regEndRed",
+      "name": "REG終了時ランプ 赤",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "regEndRainbow",
+      "name": "REG終了時ランプ 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/s_kinghanahana2023/0/"
+  ]
+}

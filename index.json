@@ -122,6 +122,312 @@
         "THUNDER"
       ],
       "note": "画像取り込みの項目名は仮"
+    },
+    {
+      "id": "im_juggler_ex",
+      "name": "アイムジャグラーEX",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/im_juggler_ex.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "アイム",
+        "アイジャグ",
+        "IM",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "neo_im_juggler_ex",
+      "name": "ネオアイムジャグラーEX",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/neo_im_juggler_ex.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ネオアイム",
+        "アイム",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "my_juggler_v",
+      "name": "マイジャグラーV",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/my_juggler_v.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "マイジャグ",
+        "マイジャグラー5",
+        "マイジャグ5",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "funky_juggler_2",
+      "name": "ファンキージャグラー2",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/funky_juggler_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ファンキー",
+        "ファンキージャグラー",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "happy_juggler_v3",
+      "name": "ハッピージャグラーVIII",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/happy_juggler_v3.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ハッピー",
+        "ハッピージャグラーV3",
+        "ハピジャグ",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "gogo_juggler_3",
+      "name": "ゴーゴージャグラー3",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/gogo_juggler_3.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ゴーゴー",
+        "ゴージャグ",
+        "GOGO",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "juggler_girls_ss",
+      "name": "ジャグラーガールズSS",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/juggler_girls_ss.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ガールズ",
+        "ジャグラーガールズ",
+        "ガルジャグ",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "mr_juggler",
+      "name": "ミスタージャグラー",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/mr_juggler.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ミスター",
+        "ミスジャグ",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "ultra_miracle_juggler",
+      "name": "ウルトラミラクルジャグラー",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/ultra_miracle_juggler.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ウルミラ",
+        "ミラクルジャグラー",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "king_hanahana_30",
+      "name": "キングハナハナ-30",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/king_hanahana_30.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "キンハナ",
+        "キングハナハナ",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+    },
+    {
+      "id": "dragon_hanahana_senko_30",
+      "name": "ドラゴンハナハナ～閃光～-30",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/dragon_hanahana_senko_30.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ドラハナ",
+        "ドラゴンハナハナ",
+        "閃光",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+    },
+    {
+      "id": "star_hanahana_30",
+      "name": "スターハナハナ-30",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/star_hanahana_30.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "スタハナ",
+        "スターハナハナ",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+    },
+    {
+      "id": "hanahana_houoh_tensho_30",
+      "name": "ハナハナホウオウ～天翔～-30",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/hanahana_houoh_tensho_30.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ホウオウ",
+        "鳳凰",
+        "天翔",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ"
     }
   ]
 }

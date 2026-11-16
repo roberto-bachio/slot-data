@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "im_juggler_ex",
+  "name": "アイムジャグラーEX",
+  "maker": "北電子",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "budou",
+      "label": "ぶどう",
+      "section": "小役",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 273.1,
+                "2": 269.7,
+                "3": 269.7,
+                "4": 259.0,
+                "5": 259.0,
+                "6": 255.0
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 439.8,
+                "2": 399.6,
+                "3": 331.0,
+                "4": 315.1,
+                "5": 255.0,
+                "6": 255.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "ぶどう確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "ぶどう確率はメーカー発表値ではなく、実機シミュレーションによる実戦値",
+          "outcomes": [
+            {
+              "counter": "budou",
+              "denoms": {
+                "1": 6.06,
+                "2": 6.04,
+                "3": 6.04,
+                "4": 6.04,
+                "5": 6.02,
+                "6": 5.8
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "sources": [
+    "https://1geki.jp/slot/s_ij_ex_6/0/"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "my_juggler_v",
+  "name": "マイジャグラーV",
+  "maker": "北電子",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "budou",
+      "label": "ぶどう",
+      "section": "小役",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 273.1,
+                "2": 270.8,
+                "3": 266.4,
+                "4": 254.0,
+                "5": 240.1,
+                "6": 229.1
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 409.6,
+                "2": 385.5,
+                "3": 336.1,
+                "4": 290.0,
+                "5": 268.6,
+                "6": 229.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "ぶどう確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "ぶどう確率はメーカー発表値ではなく、実機シミュレーションによる実戦値",
+          "outcomes": [
+            {
+              "counter": "budou",
+              "denoms": {
+                "1": 5.89,
+                "2": 5.85,
+                "3": 5.81,
+                "4": 5.77,
+                "5": 5.76,
+                "6": 5.66
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "sources": [
+    "https://1geki.jp/slot/s_myj5/0/"
+  ]
+}
