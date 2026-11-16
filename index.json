@@ -102,6 +102,26 @@
         "コンドル",
         "CRANKY"
       ]
+    },
+    {
+      "id": "smaslo_thunder_v",
+      "name": "スマスロ サンダーV",
+      "maker": "エレコ",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_thunder_v.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "サンダー",
+        "サンダーV",
+        "THUNDER"
+      ],
+      "note": "画像取り込みの項目名は仮"
     }
   ]
 }
