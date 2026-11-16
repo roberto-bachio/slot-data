@@ -428,6 +428,72 @@
         "HANAHANA"
       ],
       "note": "カウンタ専用・ボーナス確率のみ"
+    },
+    {
+      "id": "smaslo_hokuto",
+      "name": "スマスロ北斗の拳",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_hokuto.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "北斗",
+        "ほくと",
+        "HOKUTO"
+      ],
+      "note": "カウンタ専用・初当りと小役確率"
+    },
+    {
+      "id": "smaslo_monkey_turn_v",
+      "name": "スマスロモンキーターンV",
+      "maker": "山佐",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_monkey_turn_v.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "モンキー",
+        "モンキーターン",
+        "モンキーターン5",
+        "MONKEY"
+      ],
+      "note": "カウンタ専用・AT初当り確率のみ"
+    },
+    {
+      "id": "smaslo_kabaneri_unato",
+      "name": "スマスロ 甲鉄城のカバネリ 海門決戦",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_kabaneri_unato.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "カバネリ",
+        "海門",
+        "うなと",
+        "KABANERI"
+      ],
+      "note": "カウンタ専用・初当りと下段ベル"
     }
   ]
 }

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "smaslo_kabaneri_unato",
+  "name": "スマスロ 甲鉄城のカバネリ 海門決戦",
+  "maker": "サミー",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bonusHit",
+      "label": "ボーナス初当り",
+      "section": "初当り",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "gedanBell",
+      "label": "下段ベル",
+      "section": "小役",
+      "rateBase": "normalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "初当り確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "bonusHit",
+              "denoms": {
+                "1": 254.2,
+                "2": 242.3,
+                "3": 239.6,
+                "4": 214.0,
+                "5": 203.2,
+                "6": 195.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "通常時の小役確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "通常時に数える",
+          "outcomes": [
+            {
+              "counter": "gedanBell",
+              "denoms": {
+                "1": 121.1,
+                "2": 114.4,
+                "3": 112.8,
+                "4": 106.2,
+                "5": 104.2,
+                "6": 99.1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "sources": [
+    "https://1geki.jp/slot/l_kabaneri2/0/",
+    "https://nana-press.com/kaiseki/machine/1097/35398/",
+    "https://pachiseven.jp/machines/7326"
+  ]
+}
