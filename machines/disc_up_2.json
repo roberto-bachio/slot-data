@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "disc_up_2",
+  "name": "パチスロ ディスクアップ2",
+  "maker": "サミー",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suikaA",
+      "label": "スイカA",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "trophyCopper",
+      "label": "トロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKirin",
+      "label": "トロフィー キリン柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "トロフィー 虹",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 287.4,
+                "2": 286.2,
+                "5": 278.9,
+                "6": 276.5
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 496.5,
+                "2": 436.9,
+                "5": 422.8,
+                "6": 397.2
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数",
+          "outcomes": [
+            {
+              "counter": "suikaA",
+              "denoms": {
+                "1": 62.1,
+                "2": 59.8,
+                "5": 59.3,
+                "6": 56.7
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 36.6,
+                "2": 34.9,
+                "5": 34.3,
+                "6": 33.6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "trophyCopper",
+      "name": "トロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "trophyKirin",
+      "name": "トロフィー キリン柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "トロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/s_discup2/0/",
+    "https://nana-press.com/kaiseki/machine/271/7546/"
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "kerotto_5_bt",
+  "name": "スマスロ ケロット5BT",
+  "maker": "山佐",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB以上の回数(SBB+BB)",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bell",
+      "label": "ベル",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "orangeH",
+      "label": "平行オレンジ",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "orangeN",
+      "label": "斜めオレンジ",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "trophyCopper",
+      "label": "ケロットトロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophySilver",
+      "label": "ケロットトロフィー 銀",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyGold",
+      "label": "ケロットトロフィー 金",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKerot",
+      "label": "ケロットトロフィー ケロット柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "ケロットトロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbCutSilver",
+      "label": "RB中カットイン 銀",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbCutGold",
+      "label": "RB中カットイン 金",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbCutGoldChara",
+      "label": "RB中カットイン 金(キャラあり)",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 232.4,
+                "2": 230.76,
+                "3": 229.15,
+                "4": 218.45,
+                "5": 215.58,
+                "6": 204.8
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 350.46,
+                "2": 341.33,
+                "3": 324.44,
+                "4": 299.25,
+                "5": 274.21,
+                "6": 239.18
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数",
+          "outcomes": [
+            {
+              "counter": "bell",
+              "denoms": {
+                "1": 7.0,
+                "2": 6.9,
+                "3": 6.9,
+                "4": 6.8,
+                "5": 6.6,
+                "6": 6.5
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 24.2,
+                "2": 23.9,
+                "3": 22.8,
+                "4": 22.2,
+                "5": 21.6,
+                "6": 21.0
+              }
+            },
+            {
+              "counter": "orangeH",
+              "denoms": {
+                "1": 91.4,
+                "2": 90.5,
+                "3": 89.5,
+                "4": 87.7,
+                "5": 86.8,
+                "6": 84.9
+              }
+            },
+            {
+              "counter": "orangeN",
+              "denoms": {
+                "1": 187.3,
+                "2": 184.1,
+                "3": 181.0,
+                "4": 177.1,
+                "5": 171.1,
+                "6": 163.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "trophyCopper",
+      "name": "ケロットトロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "trophySilver",
+      "name": "ケロットトロフィー 銀",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyGold",
+      "name": "ケロットトロフィー 金",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "trophyKerot",
+      "name": "ケロットトロフィー ケロット柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "ケロットトロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "rbCutSilver",
+      "name": "RB中カットイン 銀",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "rbCutGold",
+      "name": "RB中カットイン 金",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "rbCutGoldChara",
+      "name": "RB中カットイン 金(キャラあり)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/lb_kelot5/0/",
+    "https://nana-press.com/kaiseki/machine/1170/37889/",
+    "https://chonborista.com/slot/yamasa-slot/258812/"
+  ]
+}

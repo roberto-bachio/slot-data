@@ -12,6 +12,7 @@
     6
   ],
   "payout": {},
+  "version": 2,
   "counters": [
     {
       "id": "normalGames",
@@ -21,26 +22,56 @@
     {
       "id": "bbHit",
       "label": "BB初当り",
-      "section": "初当り",
+      "section": "通常時",
       "rateBase": "normalGames"
     },
     {
       "id": "chudanCherry",
       "label": "中段チェリー",
-      "section": "小役",
+      "section": "通常時",
       "rateBase": "normalGames"
     },
     {
       "id": "jakuSuika",
       "label": "弱スイカ",
-      "section": "小役",
+      "section": "通常時",
       "rateBase": "normalGames"
     },
     {
       "id": "kyoSuika",
       "label": "強スイカ",
-      "section": "小役",
+      "section": "通常時",
       "rateBase": "normalGames"
+    },
+    {
+      "id": "trophyGold",
+      "label": "サミートロフィー 金",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKirin",
+      "label": "サミートロフィー キリン柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "サミートロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "get456",
+      "label": "獲得枚数表示 456枚",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "get666",
+      "label": "獲得枚数表示 666枚",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "shodai",
+      "label": "初代演出(リン・ユリア・シン・サウザー・ジャギ)",
+      "section": "示唆(確定系)"
     }
   ],
   "modes": [
@@ -115,7 +146,68 @@
       ]
     }
   ],
-  "hints": [],
+  "hints": [
+    {
+      "counter": "trophyGold",
+      "name": "サミートロフィー 金",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyKirin",
+      "name": "サミートロフィー キリン柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "サミートロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "get456",
+      "name": "獲得枚数表示 456枚",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "get666",
+      "name": "獲得枚数表示 666枚",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "shodai",
+      "name": "初代演出(リン・ユリア・シン・サウザー・ジャギ)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
   "sources": [
     "https://1geki.jp/slot/s_sma_hokutonoken/0/",
     "https://pachiseven.jp/articles/detail/17713",

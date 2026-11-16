@@ -13,6 +13,7 @@
     6
   ],
   "payout": {},
+  "version": 2,
   "counters": [
     {
       "id": "normalGames",
@@ -22,14 +23,79 @@
     {
       "id": "bonusHit",
       "label": "ボーナス初当り",
-      "section": "初当り",
+      "section": "通常時",
       "rateBase": "normalGames"
     },
     {
       "id": "gedanBell",
       "label": "下段ベル",
-      "section": "小役",
+      "section": "通常時",
       "rateBase": "normalGames"
+    },
+    {
+      "id": "trophyCopper",
+      "label": "サミートロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophySilver",
+      "label": "サミートロフィー 銀",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyGold",
+      "label": "サミートロフィー 金",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKirin",
+      "label": "サミートロフィー キリン柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "サミートロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "kuji2",
+      "label": "おみくじ 小吉",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "kuji4",
+      "label": "おみくじ 中吉",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "kuji6",
+      "label": "おみくじ 大吉",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "voice2",
+      "label": "ボーナス中 無名特殊ボイス",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "voice5",
+      "label": "ボーナス中 ボイス非発生",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "add44",
+      "label": "上乗せ「44」/ 456枚OVER / キャラ紹介 美馬",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "add55",
+      "label": "上乗せ「55」",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "add66",
+      "label": "上乗せ「66」「77」/ 666枚OVER / ST終了画面 水着",
+      "section": "示唆(確定系)"
     }
   ],
   "modes": [
@@ -86,7 +152,140 @@
       ]
     }
   ],
-  "hints": [],
+  "hints": [
+    {
+      "counter": "trophyCopper",
+      "name": "サミートロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "trophySilver",
+      "name": "サミートロフィー 銀",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyGold",
+      "name": "サミートロフィー 金",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "trophyKirin",
+      "name": "サミートロフィー キリン柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "サミートロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "kuji2",
+      "name": "おみくじ 小吉",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "kuji4",
+      "name": "おみくじ 中吉",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "kuji6",
+      "name": "おみくじ 大吉",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "voice2",
+      "name": "ボーナス中 無名特殊ボイス",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "voice5",
+      "name": "ボーナス中 ボイス非発生",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "add44",
+      "name": "上乗せ「44」/ 456枚OVER / キャラ紹介 美馬",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "add55",
+      "name": "上乗せ「55」",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "add66",
+      "name": "上乗せ「66」「77」/ 666枚OVER / ST終了画面 水着",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
   "sources": [
     "https://1geki.jp/slot/l_kabaneri2/0/",
     "https://nana-press.com/kaiseki/machine/1097/35398/",

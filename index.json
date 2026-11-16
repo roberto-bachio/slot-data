@@ -430,27 +430,6 @@
       "note": "カウンタ専用・ボーナス確率のみ"
     },
     {
-      "id": "smaslo_hokuto",
-      "name": "スマスロ北斗の拳",
-      "maker": "サミー",
-      "settings": [
-        1,
-        2,
-        4,
-        5,
-        6
-      ],
-      "file": "machines/smaslo_hokuto.json",
-      "version": 1,
-      "ocrVerified": false,
-      "keywords": [
-        "北斗",
-        "ほくと",
-        "HOKUTO"
-      ],
-      "note": "カウンタ専用・初当りと小役確率"
-    },
-    {
       "id": "smaslo_monkey_turn_v",
       "name": "スマスロモンキーターンV",
       "maker": "山佐",
@@ -473,6 +452,112 @@
       "note": "カウンタ専用・AT初当り確率のみ"
     },
     {
+      "id": "disc_up_2",
+      "name": "パチスロ ディスクアップ2",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/disc_up_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ディスクアップ",
+        "ディスク",
+        "DISCUP"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "disc_up_ultraremix",
+      "name": "ディスクアップ ULTRAREMIX",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/disc_up_ultraremix.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ディスクアップ",
+        "ウルトラリミックス",
+        "ウルリミ",
+        "DISCUP"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "fujiko_bt",
+      "name": "L不二子BT",
+      "maker": "平和",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/fujiko_bt.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "不二子",
+        "ふじこ",
+        "ルパン",
+        "FUJIKO"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "kerotto_5_bt",
+      "name": "スマスロ ケロット5BT",
+      "maker": "山佐",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/kerotto_5_bt.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ケロット",
+        "けろっと",
+        "KEROT"
+      ],
+      "note": "カウンタ専用"
+    },
+    {
+      "id": "smaslo_hokuto",
+      "name": "スマスロ北斗の拳",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_hokuto.json",
+      "version": 2,
+      "ocrVerified": false,
+      "keywords": [
+        "北斗",
+        "ほくと",
+        "HOKUTO"
+      ],
+      "note": "カウンタ専用・初当りと小役確率、確定系の示唆"
+    },
+    {
       "id": "smaslo_kabaneri_unato",
       "name": "スマスロ 甲鉄城のカバネリ 海門決戦",
       "maker": "サミー",
@@ -485,7 +570,7 @@
         6
       ],
       "file": "machines/smaslo_kabaneri_unato.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "カバネリ",
@@ -493,7 +578,7 @@
         "うなと",
         "KABANERI"
       ],
-      "note": "カウンタ専用・初当りと下段ベル"
+      "note": "カウンタ専用・初当りと下段ベル、確定系の示唆"
     }
   ]
 }

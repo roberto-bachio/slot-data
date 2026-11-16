@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "id": "fujiko_bt",
+  "name": "L不二子BT",
+  "maker": "平和",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bbGames",
+      "label": "SBB・BB中ゲーム数",
+      "section": "BB中"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数(SBBを除く)",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "plumA",
+      "label": "プラムA",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "plumB",
+      "label": "プラムB",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bbNanamePlum",
+      "label": "BB中 斜めプラム",
+      "section": "BB中"
+    },
+    {
+      "id": "voiceFujiko",
+      "label": "枚数調整成功時 不二子ボイス",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "intro2",
+      "label": "キャラ紹介 赤3人(設定2以上のパターン)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "intro4",
+      "label": "キャラ紹介 赤ルパン+赤不二子",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "intro5",
+      "label": "キャラ紹介 赤ルパン+赤3人",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "SBBは設定差がないため含めない",
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 394.8,
+                "2": 364.1,
+                "4": 319.7,
+                "5": 291.3,
+                "6": 229.1
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 321.3,
+                "2": 304.8,
+                "4": 278.9,
+                "5": 252.1,
+                "6": 227.6
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数",
+          "outcomes": [
+            {
+              "counter": "plumA",
+              "denoms": {
+                "1": 9.3,
+                "2": 9.1,
+                "4": 8.9,
+                "5": 8.7,
+                "6": 8.6
+              }
+            },
+            {
+              "counter": "plumB",
+              "denoms": {
+                "1": 25.6,
+                "2": 25.1,
+                "4": 24.3,
+                "5": 24.0,
+                "6": 23.7
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 53.1,
+                "2": 51.8,
+                "4": 49.3,
+                "5": 48.2,
+                "6": 46.7
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "bbKoyaku",
+          "name": "SBB・BB中 斜めプラム",
+          "trials": {
+            "plus": [
+              "bbGames"
+            ]
+          },
+          "note": "分母はSBB・BB中のゲーム数",
+          "outcomes": [
+            {
+              "counter": "bbNanamePlum",
+              "denoms": {
+                "1": 4.5,
+                "2": 4.3,
+                "4": 4.15,
+                "5": 4.0,
+                "6": 4.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "voiceFujiko",
+      "name": "枚数調整成功時 不二子ボイス",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "intro2",
+      "name": "キャラ紹介 赤3人(設定2以上のパターン)",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "intro4",
+      "name": "キャラ紹介 赤ルパン+赤不二子",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "intro5",
+      "name": "キャラ紹介 赤ルパン+赤3人",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/lb_fj2/0/",
+    "https://pachiseven.jp/machines/7305/cutout/4",
+    "https://chonborista.com/slot/amute/246917/"
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "disc_up_ultraremix",
+  "name": "ディスクアップ ULTRAREMIX",
+  "maker": "サミー",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "sanmai",
+      "label": "3枚役(7・星・星)",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suikaA",
+      "label": "スイカA",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "trophyCopper",
+      "label": "トロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKirin",
+      "label": "トロフィー キリン柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "トロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbEnd2",
+      "label": "RB終了画面 設定2以上濃厚の柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbEnd5",
+      "label": "RB終了画面 設定5以上濃厚の柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbEnd6",
+      "label": "RB終了画面 設定6濃厚の柄",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 287.2,
+                "2": 284.3,
+                "5": 273.8,
+                "6": 260.9
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 495.3,
+                "2": 477.2,
+                "5": 398.6,
+                "6": 334.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数",
+          "outcomes": [
+            {
+              "counter": "sanmai",
+              "denoms": {
+                "1": 13.7,
+                "2": 13.4,
+                "5": 12.9,
+                "6": 12.6
+              }
+            },
+            {
+              "counter": "suikaA",
+              "denoms": {
+                "1": 59.6,
+                "2": 59.1,
+                "5": 57.0,
+                "6": 54.4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "trophyCopper",
+      "name": "トロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "trophyKirin",
+      "name": "トロフィー キリン柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "トロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "counter": "rbEnd2",
+      "name": "RB終了画面 設定2以上濃厚の柄",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "rbEnd5",
+      "name": "RB終了画面 設定5以上濃厚の柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "rbEnd6",
+      "name": "RB終了画面 設定6濃厚の柄",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/l_discup_ur/0/",
+    "https://nana-press.com/kaiseki/machine/883/27467/"
+  ]
+}
