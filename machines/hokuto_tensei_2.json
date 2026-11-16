@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "hokuto_tensei_2",
+  "name": "スマスロ 北斗の拳 転生の章2",
+  "maker": "銀座",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "atHit",
+      "label": "AT初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "trophyCopper",
+      "label": "サミートロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophySilver",
+      "label": "サミートロフィー 銀",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyGold",
+      "label": "サミートロフィー 金",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyKirin",
+      "label": "サミートロフィー キリン柄",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "trophyRainbow",
+      "label": "サミートロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lampB2",
+      "label": "上部中央ランプ 黄緑・点灯",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lampB4",
+      "label": "上部中央ランプ 黄緑・点滅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lampB6",
+      "label": "上部中央ランプ 金色・点灯",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "AT初当り確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "atHit",
+              "denoms": {
+                "1": 366.0,
+                "2": 357.0,
+                "3": 336.3,
+                "4": 298.7,
+                "5": 283.2,
+                "6": 273.1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "trophyCopper",
+      "name": "サミートロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "trophySilver",
+      "name": "サミートロフィー 銀",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "trophyGold",
+      "name": "サミートロフィー 金",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "trophyKirin",
+      "name": "サミートロフィー キリン柄",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "trophyRainbow",
+      "name": "サミートロフィー 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "lampB2",
+      "name": "上部中央ランプ 黄緑・点灯",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "lampB4",
+      "name": "上部中央ランプ 黄緑・点滅",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "lampB6",
+      "name": "上部中央ランプ 金色・点灯",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/l_hokuto_tensei2/0/",
+    "https://nana-press.com/kaiseki/machine/1059/33041/",
+    "https://pachiseven.jp/machines/7282/cutout/4"
+  ]
+}

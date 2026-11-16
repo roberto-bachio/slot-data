@@ -579,6 +579,119 @@
         "KABANERI"
       ],
       "note": "カウンタ専用・初当りと下段ベル、確定系の示唆"
+    },
+    {
+      "id": "tokyo_ghoul",
+      "name": "L 東京喰種",
+      "maker": "スパイキー",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/tokyo_ghoul.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "東京喰種",
+        "グール",
+        "トーキョーグール",
+        "GHOUL"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆"
+    },
+    {
+      "id": "lycoris_recoil",
+      "name": "スマスロ リコリス・リコイル",
+      "maker": "銀座",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/lycoris_recoil.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "リコリコ",
+        "リコリス",
+        "LYCORIS"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆"
+    },
+    {
+      "id": "hokuto_tensei_2",
+      "name": "スマスロ 北斗の拳 転生の章2",
+      "maker": "銀座",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/hokuto_tensei_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "北斗",
+        "転生",
+        "転生の章",
+        "てんせい"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆"
+    },
+    {
+      "id": "sengoku_otome_5",
+      "name": "L戦国乙女5 業火を穿つ宿焔の双刃",
+      "maker": "オリンピア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/sengoku_otome_5.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "戦国乙女",
+        "乙女",
+        "おとめ"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆"
+    },
+    {
+      "id": "monhun_rise_sunbreak",
+      "name": "スマスロ モンスターハンターライズ：サンブレイク",
+      "maker": "アデリオン",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/monhun_rise_sunbreak.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "モンハン",
+        "モンスターハンター",
+        "ライズ",
+        "サンブレイク"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆"
     }
   ]
 }

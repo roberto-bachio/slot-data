@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "monhun_rise_sunbreak",
+  "name": "スマスロ モンスターハンターライズ：サンブレイク",
+  "maker": "アデリオン",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "atHit",
+      "label": "AT初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "czBreak",
+      "label": "ブレイクゾーン",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "czAiru",
+      "label": "アイルー福引",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "h2",
+      "label": "設定2以上濃厚(222枚over、トロフィー・レア役 銅)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h3",
+      "label": "設定3以上濃厚(トロフィー・レア役 銀)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h4",
+      "label": "設定4以上濃厚(456枚over、トロフィー・レア役 金)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h5",
+      "label": "設定5以上濃厚(555枚over、トロフィー・レア役 紅葉柄)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h6",
+      "label": "設定6濃厚(666枚over、トロフィー・レア役 虹)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "even",
+      "label": "246枚over(設定2・4・6濃厚)",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "AT初当り確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "atHit",
+              "denoms": {
+                "1": 349.9,
+                "2": 337.0,
+                "3": 319.8,
+                "4": 283.6,
+                "5": 264.0,
+                "6": 242.3
+              }
+            }
+          ]
+        },
+        {
+          "id": "cz",
+          "name": "CZ出現率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "CZからATに当選した分は初当りにも数えるため、初当りと重なる部分がある",
+          "outcomes": [
+            {
+              "counter": "czBreak",
+              "denoms": {
+                "1": 111.4,
+                "2": 108.8,
+                "3": 105.6,
+                "4": 99.3,
+                "5": 97.2,
+                "6": 95.8
+              }
+            },
+            {
+              "counter": "czAiru",
+              "defaultZero": true,
+              "denoms": {
+                "1": 2290.1,
+                "2": 2090.4,
+                "3": 1821.1,
+                "4": 1472.5,
+                "5": 1219.3,
+                "6": 976.4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "h2",
+      "name": "設定2以上濃厚(222枚over、トロフィー・レア役 銅)",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "h3",
+      "name": "設定3以上濃厚(トロフィー・レア役 銀)",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "h4",
+      "name": "設定4以上濃厚(456枚over、トロフィー・レア役 金)",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "h5",
+      "name": "設定5以上濃厚(555枚over、トロフィー・レア役 紅葉柄)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "h6",
+      "name": "設定6濃厚(666枚over、トロフィー・レア役 虹)",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "counter": "even",
+      "name": "246枚over(設定2・4・6濃厚)",
+      "meaning": "設定1・3・5以外",
+      "excludes": [
+        1,
+        3,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/l_mh_sun/0/",
+    "https://nana-press.com/kaiseki/machine/1216/39266/",
+    "https://chonborista.com/slot/enta-slot/264514/"
+  ]
+}

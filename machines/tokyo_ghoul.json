@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "tokyo_ghoul",
+  "name": "L 東京喰種",
+  "maker": "スパイキー",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {},
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "atHit",
+      "label": "AT初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "czHit",
+      "label": "CZ(合算)",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "h3",
+      "label": "設定3以上濃厚(エンディング 銀カード 金木研)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h4",
+      "label": "設定4以上濃厚(金枠・金背景・金カード利世、456OVER)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h5",
+      "label": "設定5以上濃厚(エンディング 金カード 隻眼の梟)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "h6",
+      "label": "設定6濃厚(虹枠・虹背景・虹カード、666OVER)",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "AT初当り確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "atHit",
+              "denoms": {
+                "1": 394.4,
+                "2": 380.5,
+                "3": 357.0,
+                "4": 325.9,
+                "5": 291.2,
+                "6": 261.3
+              }
+            }
+          ]
+        },
+        {
+          "id": "cz",
+          "name": "CZ出現率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "CZからATに当選した分は初当りにも数えるため、初当りと重なる部分がある",
+          "outcomes": [
+            {
+              "counter": "czHit",
+              "denoms": {
+                "1": 262.6,
+                "2": 255.6,
+                "3": 246.5,
+                "4": 233.1,
+                "5": 216.4,
+                "6": 203.7
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "h3",
+      "name": "設定3以上濃厚(エンディング 銀カード 金木研)",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "h4",
+      "name": "設定4以上濃厚(金枠・金背景・金カード利世、456OVER)",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "h5",
+      "name": "設定5以上濃厚(エンディング 金カード 隻眼の梟)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "h6",
+      "name": "設定6濃厚(虹枠・虹背景・虹カード、666OVER)",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "sources": [
+    "https://1geki.jp/slot/l_tokyoghoul/0/",
+    "https://nana-press.com/kaiseki/machine/889/27002/",
+    "https://chonborista.com/slot/spiky/226073/"
+  ]
+}
