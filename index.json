@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "machines": [
     {
       "id": "smaslo_hanabi",
@@ -13,14 +13,16 @@
         6
       ],
       "file": "machines/smaslo_hanabi.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": true,
       "keywords": [
         "ハナビ",
         "花火",
         "はなび",
         "HANABI"
-      ]
+      ],
+      "summary": true,
+      "introduced": "2026-02-02"
     },
     {
       "id": "shin_hanabi",
