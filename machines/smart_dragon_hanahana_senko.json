@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "smart_dragon_hanahana_senko",
+  "name": "スマート沖スロ ドラゴンハナハナ～閃光～",
+  "maker": "パイオニア",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.0,
+    "2": 99.0,
+    "3": 101.0,
+    "4": 104.0,
+    "5": 107.0,
+    "6": 110.0
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "基本情報",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "regEndBlue",
+      "label": "REG終了時ランプ 青",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndYellow",
+      "label": "REG終了時ランプ 黄",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndGreen",
+      "label": "REG終了時ランプ 緑",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndRed",
+      "label": "REG終了時ランプ 赤",
+      "section": "REG終了時"
+    },
+    {
+      "id": "regEndRainbow",
+      "label": "REG終了時ランプ 虹",
+      "section": "REG終了時"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 256,
+                "2": 246,
+                "3": 235,
+                "4": 224,
+                "5": 212,
+                "6": 199
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 642,
+                "2": 585,
+                "3": 537,
+                "4": 489,
+                "5": 442,
+                "6": 399
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "regEndBlue",
+      "name": "REG終了時ランプ 青",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "regEndYellow",
+      "name": "REG終了時ランプ 黄",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "regEndGreen",
+      "name": "REG終了時ランプ 緑",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "regEndRed",
+      "name": "REG終了時ランプ 赤",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "regEndRainbow",
+      "name": "REG終了時ランプ 虹",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "-30版との関係",
+      "category": "参考",
+      "detail": "ボーナス確率・機械割は -30版と同じ",
+      "support": "yes",
+      "note": "解析サイトの記載による。ランプの示唆は -30版で2サイト一致したものを使う"
+    },
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/256・設定2 1/246・設定3 1/235・設定4 1/224・設定5 1/212・設定6 1/199",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/642・設定2 1/585・設定3 1/537・設定4 1/489・設定5 1/442・設定6 1/399",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/183・設定2 1/173・設定3 1/163・設定4 1/154・設定5 1/143・設定6 1/133",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG終了時のフェザーランプ",
+      "category": "示唆",
+      "detail": "青 設定2以上・黄 設定3以上・緑 設定4以上・赤 設定5以上・虹 設定6",
+      "support": "yes",
+      "note": "出現した色をカウンタで数える(確定系)",
+      "counters": [
+        "regEndBlue",
+        "regEndYellow",
+        "regEndGreen",
+        "regEndRed",
+        "regEndRainbow"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BIG終了時のフェザーランプ",
+      "category": "示唆",
+      "detail": "白→虹の順に高設定期待度が上がる",
+      "support": "no",
+      "note": "傾向だけで、振り分けの数値が公表されていないため未対応"
+    },
+    {
+      "title": "REG中のサイドランプ",
+      "category": "示唆",
+      "detail": "色で奇数・偶数設定や高設定を示唆",
+      "support": "no",
+      "note": "振り分けの数値が公表されていないため未対応"
+    },
+    {
+      "title": "通常時のベル",
+      "category": "通常時 小役",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトには設定6の実戦値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "BIG中のスイカ",
+      "category": "BB中",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトには設定6の実戦値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.0%・設定2 99.0%・設定3 101.0%・設定4 104.0%・設定5 107.0%・設定6 110.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

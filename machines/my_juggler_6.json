@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "my_juggler_6",
+  "name": "マイジャグラーVI",
+  "maker": "北電子",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.0,
+    "2": 98.0,
+    "3": 99.9,
+    "4": 102.8,
+    "5": 105.3,
+    "6": 109.4
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "budou",
+      "label": "ぶどう",
+      "section": "通常時"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "section": "通常時"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 273.1,
+                "2": 270.8,
+                "3": 266.4,
+                "4": 254.0,
+                "5": 240.1,
+                "6": 229.1
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 409.6,
+                "2": 385.5,
+                "3": 336.1,
+                "4": 290.0,
+                "5": 268.6,
+                "6": 229.1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/273.1・設定2 1/270.8・設定3 1/266.4・設定4 1/254.0・設定5 1/240.1・設定6 1/229.1",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/409.6・設定2 1/385.5・設定3 1/336.1・設定4 1/290.0・設定5 1/268.6・設定6 1/229.1",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/163.9・設定2 1/159.1・設定3 1/148.6・設定4 1/135.4・設定5 1/126.8・設定6 1/114.5",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ぶどう・チェリー",
+      "category": "通常時 小役",
+      "detail": "設定差あり(設定別の値は未公表)",
+      "support": "no",
+      "reliability": "estimate",
+      "note": "解析サイトには設定6の実戦値しかないため判別には使わない。カウンタで数えることはできる"
+    },
+    {
+      "title": "単独・チェリー重複ボーナス",
+      "category": "ボーナス当選の内訳",
+      "detail": "設定差あり",
+      "support": "no",
+      "note": "設定別の値が出ていないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.0%・設定2 98.0%・設定3 99.9%・設定4 102.8%・設定5 105.3%・設定6 109.4%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

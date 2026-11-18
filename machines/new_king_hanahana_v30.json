@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "new_king_hanahana_v30",
+  "name": "ニューキングハナハナV-30",
+  "maker": "パイオニア",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "payout": {
+    "1": 97.0,
+    "2": 99.0,
+    "3": 101.0,
+    "4": 104.0,
+    "5": 108.0
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BIG回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "REG回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "設定は1〜4とVの5段階(Vは5と表示)",
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 299,
+                "2": 291,
+                "3": 281,
+                "4": 268,
+                "5": 253
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 496,
+                "2": 471,
+                "3": 442,
+                "4": 409,
+                "5": 372
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/299・設定2 1/291・設定3 1/281・設定4 1/268・設定V 1/253",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/496・設定2 1/471・設定3 1/442・設定4 1/409・設定V 1/372",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/186.5・設定2 1/179.9・設定3 1/171.8・設定4 1/161.9・設定V 1/150.6",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス中のスイカ",
+      "category": "BB中",
+      "detail": "BIG前半・REG中のスイカは高設定ほど出やすい",
+      "support": "no",
+      "note": "設定別の値が出ていない(設定Vの実戦値のみ)ため未対応"
+    },
+    {
+      "title": "ボーナス終了時のハイビスカスランプ",
+      "category": "示唆",
+      "detail": "白→青→黄→緑→紫→虹の順に高設定期待度が上がる",
+      "support": "no",
+      "note": "5段階設定になり「設定N以上」の確定が判明していないため未対応"
+    },
+    {
+      "title": "BIG後半のサイドランプ",
+      "category": "示唆",
+      "detail": "青・緑は奇数、黄・赤は偶数、虹は高設定を示唆",
+      "support": "no",
+      "note": "振り分けの数値が公表されていないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.0%・設定2 99.0%・設定3 101.0%・設定4 104.0%・設定V 108.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

@@ -757,6 +757,113 @@
       "note": "カウンタ専用・初当り確率と確定系の示唆",
       "summary": true,
       "introduced": "2026-10-05"
+    },
+    {
+      "id": "my_juggler_6",
+      "name": "マイジャグラーVI",
+      "maker": "北電子",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/my_juggler_6.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "マイジャグ",
+        "マイジャグラー6",
+        "マイジャグ6",
+        "マイジャグラーⅥ",
+        "ジャグラー",
+        "JUGGLER"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ",
+      "introduced": "2026-10-05",
+      "summary": true
+    },
+    {
+      "id": "new_king_hanahana_v30",
+      "name": "ニューキングハナハナV-30",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "file": "machines/new_king_hanahana_v30.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ニューキング",
+        "キングハナハナ",
+        "キンハナ",
+        "ニューキングハナハナV",
+        "スマート沖スロ",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率のみ・設定Vは「設定5」と表示",
+      "introduced": "2026-01-05",
+      "summary": true
+    },
+    {
+      "id": "smart_dragon_hanahana_senko",
+      "name": "スマート沖スロ ドラゴンハナハナ～閃光～",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smart_dragon_hanahana_senko.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ドラハナ",
+        "ドラゴンハナハナ",
+        "閃光",
+        "スマート沖スロ",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ(-30版と同じ数値)",
+      "introduced": "2024-03-18",
+      "summary": true
+    },
+    {
+      "id": "smart_star_hanahana",
+      "name": "スマート沖スロ スターハナハナ",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smart_star_hanahana.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "スタハナ",
+        "スターハナハナ",
+        "スマート沖スロ",
+        "ハナハナ",
+        "HANAHANA"
+      ],
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ(-30版と同じ数値)",
+      "introduced": "2025-01-20",
+      "summary": true
     }
   ]
 }
