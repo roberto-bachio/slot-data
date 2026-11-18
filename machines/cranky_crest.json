@@ -75,6 +75,35 @@
       "rateBase": "totalGames"
     },
     {
+      "id": "cherryA",
+      "label": "チェリーA",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "ccChudanCherry",
+      "label": "クレストチャレンジ 中段チェリー",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "ccHane",
+      "label": "クレストチャレンジ 羽揃い",
+      "section": "小役",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bbGames",
+      "label": "BB中ゲーム数",
+      "section": "BB中詳細"
+    },
+    {
+      "id": "bbReach",
+      "label": "BB中 リーチ目",
+      "section": "BB中詳細",
+      "rateBase": "bbGames"
+    },
+    {
       "id": "lampDia",
       "label": "BB中 ♦点灯",
       "ocrLabel": "♦点灯",
@@ -111,6 +140,18 @@
       "label": "RB中 1枚役",
       "ocrLabel": "1枚役",
       "section": "RB中詳細"
+    },
+    {
+      "id": "rbBell",
+      "label": "RB中 共通ベル",
+      "section": "RB中詳細",
+      "rateBase": "rbGames"
+    },
+    {
+      "id": "rbLuckyB",
+      "label": "RB中 ラッキー役B",
+      "section": "RB中詳細",
+      "rateBase": "rbGames"
     },
     {
       "id": "rbEndRed",
@@ -225,6 +266,69 @@
               }
             }
           ]
+        },
+        {
+          "id": "cherryA",
+          "name": "チェリーA",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "設定差はごくわずか",
+          "outcomes": [
+            {
+              "counter": "cherryA",
+              "denoms": {
+                "1": 72.8,
+                "2": 72.8,
+                "5": 72.7,
+                "6": 72.7
+              }
+            }
+          ]
+        },
+        {
+          "id": "ccChudan",
+          "name": "クレストチャレンジ 中段チェリー",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "左リールにコンドルを狙ったときの値",
+          "outcomes": [
+            {
+              "counter": "ccChudanCherry",
+              "denoms": {
+                "1": 260.1,
+                "2": 259.0,
+                "5": 256.0,
+                "6": 252.1
+              }
+            }
+          ]
+        },
+        {
+          "id": "ccHane",
+          "name": "クレストチャレンジ 羽揃い",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "左リールにコンドルを狙ったときの値",
+          "outcomes": [
+            {
+              "counter": "ccHane",
+              "denoms": {
+                "1": 618.3,
+                "2": 612.5,
+                "5": 595.8,
+                "6": 574.9
+              }
+            }
+          ]
         }
       ]
     },
@@ -276,6 +380,28 @@
               }
             }
           ]
+        },
+        {
+          "id": "bbReach",
+          "name": "BB中 リーチ目",
+          "trials": {
+            "plus": [
+              "bbGames"
+            ]
+          },
+          "note": "偶数設定、とくに設定6で出やすい",
+          "outcomes": [
+            {
+              "counter": "bbReach",
+              "denoms": {
+                "1": 5461.3,
+                "2": 1365.3,
+                "5": 5461.3,
+                "6": 341.3
+              },
+              "defaultZero": true
+            }
+          ]
         }
       ]
     },
@@ -325,6 +451,47 @@
               }
             }
           ]
+        },
+        {
+          "id": "rbBell",
+          "name": "RB中 共通ベル",
+          "trials": {
+            "plus": [
+              "rbGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "rbBell",
+              "denoms": {
+                "1": 16.0,
+                "2": 15.6,
+                "5": 15.3,
+                "6": 15.3
+              }
+            }
+          ]
+        },
+        {
+          "id": "rbLuckyB",
+          "name": "RB中 ラッキー役B",
+          "trials": {
+            "plus": [
+              "rbGames"
+            ]
+          },
+          "note": "高設定ほど出にくい",
+          "outcomes": [
+            {
+              "counter": "rbLuckyB",
+              "denoms": {
+                "1": 5.3,
+                "2": 5.8,
+                "5": 6.3,
+                "6": 6.3
+              }
+            }
+          ]
         }
       ]
     }
@@ -356,8 +523,232 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/s_crankycrest/0/",
-    "https://pachiseven.jp/machines/6845/cutout/4"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/275.4・設定2 1/275.4・設定5 1/262.1・設定6 1/254.0",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/407.1・設定2 1/370.3・設定5 1/336.1・設定6 1/304.8",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/164.3・設定2 1/157.9・設定5 1/147.3・設定6 1/138.5",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ベルA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/12.7・設定2 1/12.4・設定5 1/12.1・設定6 1/11.8",
+      "support": "yes",
+      "note": "回数が多く集まるので重要",
+      "counters": [
+        "bellA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ベルB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/25.4・設定2 1/26.5・設定5 1/25.1・設定6 1/26.2",
+      "support": "yes",
+      "note": "偶数設定がやや高い",
+      "counters": [
+        "bellB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/64.4・設定2 1/58.4・設定5 1/64.1・設定6 1/58.1",
+      "support": "yes",
+      "note": "偶数設定が高い",
+      "counters": [
+        "suikaA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/193.3・設定2 1/175.2・設定5 1/192.2・設定6 1/174.3",
+      "support": "yes",
+      "note": "偶数設定が高い",
+      "counters": [
+        "suikaB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリーA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/72.8・設定2 1/72.8・設定5 1/72.7・設定6 1/72.7",
+      "support": "yes",
+      "note": "設定差はごくわずか。カウンタで数える",
+      "counters": [
+        "cherryA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリーB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/36.2・設定2 1/35.8・設定5 1/35.8・設定6 1/35.3",
+      "support": "yes",
+      "counters": [
+        "cherryB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "クレストチャレンジ 中段チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/260.1・設定2 1/259.0・設定5 1/256.0・設定6 1/252.1",
+      "support": "yes",
+      "note": "左リールにコンドルを狙ったときの値。カウンタで数える",
+      "counters": [
+        "ccChudanCherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "クレストチャレンジ 羽揃い",
+      "category": "通常時 小役",
+      "detail": "設定1 1/618.3・設定2 1/612.5・設定5 1/595.8・設定6 1/574.9",
+      "support": "yes",
+      "note": "左リールにコンドルを狙ったときの値。カウンタで数える",
+      "counters": [
+        "ccHane"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "特殊役A〜E",
+      "category": "通常時 小役",
+      "detail": "高設定ほどわずかに出やすい",
+      "support": "no",
+      "note": "出現がまれで設定差もわずかなため未対応。機種の複製・編集で自分で追加できる",
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のリーチ目",
+      "category": "BB中",
+      "detail": "設定1 1/5461.3・設定2 1/1365.3・設定5 1/5461.3・設定6 1/341.3",
+      "support": "yes",
+      "note": "設定6で出やすい。BB中のゲーム数と一緒にカウンタで数える",
+      "counters": [
+        "bbReach"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のルーレットランプ",
+      "category": "示唆",
+      "detail": "♦(左) 設定1 49.8%・設定2 40.6%・設定5 47.8%・設定6 38.3% / ♥(右) 設定1 40.7%・設定2 49.7%・設定5 39.1%・設定6 46.8% / ♠(上) 設定1 8.3%・設定2 9.7%・設定5 11.1%・設定6 12.5% / ♣(下) 設定1 1.2%・設定2 0%・設定5 2.0%・設定6 2.3%",
+      "support": "yes",
+      "note": "♣は設定2で出ない(設定2否定)。点灯回数の合計を分母にする",
+      "counters": [
+        "lampDia",
+        "lampHeart",
+        "lampSpade",
+        "lampClub"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の1枚役",
+      "category": "RB中",
+      "detail": "設定1 1/8.0・設定2 1/7.3・設定5 1/6.6・設定6 1/6.6",
+      "support": "yes",
+      "counters": [
+        "rbOneMai"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の共通ベル",
+      "category": "RB中",
+      "detail": "設定1 1/16.0・設定2 1/15.6・設定5 1/15.3・設定6 1/15.3",
+      "support": "yes",
+      "note": "カウンタで数える",
+      "counters": [
+        "rbBell"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中のラッキー役B",
+      "category": "RB中",
+      "detail": "設定1 1/5.3・設定2 1/5.8・設定5 1/6.3・設定6 1/6.3",
+      "support": "yes",
+      "note": "高設定ほど出にくい。カウンタで数える",
+      "counters": [
+        "rbLuckyB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB終了画面(赤・青)",
+      "category": "示唆",
+      "detail": "赤は設定1・6、青は設定2・5で出やすい(赤の割合 設定1 60.0%・設定2 40.0%・設定5 40.0%・設定6 60.0%)",
+      "support": "partial",
+      "note": "赤と青の回数だけで比べる。1枚役の回数ごとの振り分けは未対応",
+      "counters": [
+        "rbEndRed",
+        "rbEndBlue"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB終了画面(特殊・金)",
+      "category": "示唆",
+      "detail": "特殊で設定2以上、金で設定5以上",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "rbEndSpecial",
+        "rbEndGold"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ボーナスの同時当選(成立役別)",
+      "category": "ボーナス当選の内訳",
+      "detail": "成立役ごとに設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 100.5%・設定2 102.0%・設定5 105.2%・設定6 108.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }

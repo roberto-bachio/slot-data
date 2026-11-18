@@ -103,9 +103,73 @@
     }
   ],
   "hints": [],
-  "sources": [
-    "https://1geki.jp/slot/s_nijex/0/",
-    "https://nana-press.com/post/1576232/3"
+  "version": 3,
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/273.1・設定2 1/269.7・設定3 1/269.7・設定4 1/259.0・設定5 1/259.0・設定6 1/255.0",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/439.8・設定2 1/399.6・設定3 1/331.0・設定4 1/315.1・設定5 1/255.0・設定6 1/255.0",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/168.5・設定2 1/161.0・設定3 1/148.6・設定4 1/142.2・設定5 1/128.5・設定6 1/127.5",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ぶどう",
+      "category": "通常時 小役",
+      "detail": "設定1 1/6.02・設定2 1/6.02・設定3 1/6.02・設定4 1/6.02・設定5 1/6.02・設定6 1/5.78",
+      "support": "yes",
+      "note": "メーカー非公表。2つの解析サイトの値が一致したものを使用",
+      "counters": [
+        "budou"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "単独BIG・チェリー重複BIG",
+      "category": "ボーナス当選の内訳",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "単独REG・チェリー重複REG",
+      "category": "ボーナス当選の内訳",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "チェリー(重複なし)",
+      "category": "通常時 小役",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    }
   ],
-  "version": 2
+  "summaryUpdated": "2026-11-18"
 }

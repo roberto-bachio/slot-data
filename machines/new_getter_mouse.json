@@ -252,9 +252,150 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/s_new_gettermouse/0/",
-    "https://pachiseven.jp/machines/6549/cutout/4",
-    "https://chonborista.com/slot/universal-slot/168364/"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/240.9・設定2 1/234.1・設定5 1/215.6・設定6 1/199.2",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/252.1・設定2 1/240.1・設定5 1/221.4・設定6 1/199.2",
+      "support": "yes",
+      "note": "設定6はBIGとREGが同じ確率",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/123.2・設定2 1/118.5・設定5 1/109.2・設定6 1/99.6",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "オレンジA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/20.5・設定2 1/20.3・設定5 1/19.6・設定6 1/18.9",
+      "support": "yes",
+      "note": "設定6はサイトにより 1/18.9 と 1/18.6。1/18.9 を使用",
+      "counters": [
+        "orangeA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "オレンジB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/20.4・設定2 1/20.2・設定5 1/19.5・設定6 1/18.9",
+      "support": "yes",
+      "counters": [
+        "orangeB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカ",
+      "category": "通常時 小役",
+      "detail": "設定1 1/59.9・設定2 1/59.0・設定5 1/56.5・設定6 1/54.9",
+      "support": "yes",
+      "counters": [
+        "suika"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/14.0・設定2 1/13.8・設定5 1/13.5・設定6 1/13.3",
+      "support": "yes",
+      "note": "回数が多く集まる",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中の斜めオレンジ",
+      "category": "BB中",
+      "detail": "設定1 1/8.0・設定2 1/6.8・設定5 1/8.0・設定6 1/6.8",
+      "support": "yes",
+      "note": "偶数設定で出やすい",
+      "counters": [
+        "bbNaname"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB終了時の葉月ちゃん「chu」",
+      "category": "示唆",
+      "detail": "出現で設定5以上(設定5 1/64・設定6 1/32。1G連・BB5連目以降は抽選なし)",
+      "support": "partial",
+      "note": "「設定5以上」の確定だけ使う。出現率は抽選しない場面があり、BB回数を分母にできないため未対応",
+      "counters": [
+        "endChu"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "3兄弟ランプの告知パターン",
+      "category": "示唆",
+      "detail": "「GET」で設定2以上・「666」で設定6・「DOG」で高設定期待度アップ",
+      "support": "partial",
+      "note": "GET・666 の確定だけ使う。DOG は数値がないため未対応",
+      "counters": [
+        "lampGet",
+        "lamp666"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中のネズミ狙い(祝福)",
+      "category": "示唆",
+      "detail": "イチロー狙いで祝福なら設定2以上。ジロー狙いは高設定、サブロー狙いは偶数設定の示唆",
+      "support": "partial",
+      "note": "イチローの確定だけ使う。ジロー・サブローは狙った回数とパンク前後で出現率が変わるため未対応",
+      "counters": [
+        "rbIchiro"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の1枚役",
+      "category": "RB中",
+      "detail": "高設定ほど出やすい(数値は未公表)",
+      "support": "no",
+      "note": "設定別の値が出ていないため未対応"
+    },
+    {
+      "title": "ボーナスの同時当選(成立役別)",
+      "category": "ボーナス当選の内訳",
+      "detail": "成立役ごとに設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 100.2%・設定2 102.0%・設定5 106.5%・設定6 111.1%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }

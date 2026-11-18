@@ -12,8 +12,15 @@
     5,
     6
   ],
-  "payout": {},
-  "version": 2,
+  "payout": {
+    "1": 97.5,
+    "2": 98.5,
+    "3": 100.8,
+    "4": 106.0,
+    "5": 111.0,
+    "6": 114.9
+  },
+  "version": 4,
   "counters": [
     {
       "id": "normalGames",
@@ -286,9 +293,73 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/l_kabaneri2/0/",
-    "https://nana-press.com/kaiseki/machine/1097/35398/",
-    "https://pachiseven.jp/machines/7326"
-  ]
+  "summary": [
+    {
+      "title": "ボーナス初当り",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/254.2・設定2 1/242.3・設定3 1/239.6・設定4 1/214.0・設定5 1/203.2・設定6 1/195.1",
+      "support": "yes",
+      "note": "分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "bonusHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "下段ベル",
+      "category": "通常時 小役",
+      "detail": "設定1 1/121.1・設定2 1/114.4・設定3 1/112.8・設定4 1/106.2・設定5 1/104.2・設定6 1/99.1",
+      "support": "yes",
+      "note": "通常時に数える",
+      "counters": [
+        "gedanBell"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "サミートロフィー 銅→設定2以上・サミートロフィー 銀→設定3以上・サミートロフィー 金→設定4以上・サミートロフィー キリン柄→設定5以上・サミートロフィー 虹→設定6・おみくじ 小吉→設定2以上・おみくじ 中吉→設定4以上・おみくじ 大吉→設定6・ボーナス中 無名特殊ボイス→設定2以上・ボーナス中 ボイス非発生→設定5以上・上乗せ「44」/ 456枚OVER / キャラ紹介 美馬→設定4以上・上乗せ「55」→設定5以上・上乗せ「66」「77」/ 666枚OVER / ST終了画面 水着→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える",
+      "counters": [
+        "trophyCopper",
+        "trophySilver",
+        "trophyGold",
+        "trophyKirin",
+        "trophyRainbow",
+        "kuji2",
+        "kuji4",
+        "kuji6",
+        "voice2",
+        "voice5",
+        "add44",
+        "add55",
+        "add66"
+      ]
+    },
+    {
+      "title": "黒煙ポイント加算・無名CZの撃破数ごとの期待度",
+      "category": "そのほか",
+      "detail": "設定差あり",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "おみくじの来栖の刀・無名のけん玉",
+      "category": "そのほか",
+      "detail": "設定2・3否定、設定1・3否定",
+      "support": "no",
+      "note": "1つの解析サイトでしか確認できないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.5%・設定2 98.5%・設定3 100.8%・設定4 106.0%・設定5 111.0%・設定6 114.9%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
 }

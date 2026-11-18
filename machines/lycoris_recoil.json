@@ -12,7 +12,14 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 97.9,
+    "2": 98.9,
+    "3": 101.3,
+    "4": 106.1,
+    "5": 110.4,
+    "6": 114.6
+  },
   "counters": [
     {
       "id": "normalGames",
@@ -60,6 +67,21 @@
     {
       "id": "trophyRainbow",
       "label": "サミートロフィー 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lyc2",
+      "label": "ラッシュ終了画面 押上の風景",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lyc4",
+      "label": "ラッシュ終了画面 ロボ太・ラッシュと違うキャラの私服",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lyc6",
+      "label": "ラッシュ終了画面 ハワイ",
       "section": "示唆(確定系)"
     }
   ],
@@ -190,11 +212,105 @@
         4,
         5
       ]
+    },
+    {
+      "counter": "lyc2",
+      "name": "ラッシュ終了画面 押上の風景",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "lyc4",
+      "name": "ラッシュ終了画面 ロボ太・ラッシュと違うキャラの私服",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "lyc6",
+      "name": "ラッシュ終了画面 ハワイ",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/l_lycoreco/0/",
-    "https://nana-press.com/kaiseki/machine/1166/37201/",
-    "https://chonborista.com/slot/sammy-slot/261631/"
-  ]
+  "summary": [
+    {
+      "title": "リコリスラッシュ初当り",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/328.8・設定2 1/323.4・設定3 1/312.1・設定4 1/288.3・設定5 1/271.6・設定6 1/256.7",
+      "support": "yes",
+      "note": "分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "atHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "CZ",
+      "category": "CZ",
+      "detail": "設定1 1/198.7・設定2 1/196.9・設定3 1/191.3・設定4 1/183.3・設定5 1/175.9・設定6 1/169.4",
+      "support": "yes",
+      "note": "CZからATに当選した分は初当りにも数えるため、初当りと重なる部分がある",
+      "counters": [
+        "czHit"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "共通ベル",
+      "category": "通常時 小役",
+      "detail": "設定1 1/95.8・設定2 1/95.8・設定3 1/95.8・設定4 1/87.6・設定5 1/83.2・設定6 1/79.1",
+      "support": "yes",
+      "note": "通常時に数える",
+      "counters": [
+        "kyotsuBell"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "サミートロフィー 銅→設定2以上・サミートロフィー 銀→設定3以上・サミートロフィー 金→設定4以上・サミートロフィー キリン柄→設定5以上・サミートロフィー 虹→設定6・ラッシュ終了画面 押上の風景→設定2以上・ラッシュ終了画面 ロボ太・ラッシュと違うキャラの私服→設定4以上・ラッシュ終了画面 ハワイ→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える",
+      "counters": [
+        "trophyCopper",
+        "trophySilver",
+        "trophyGold",
+        "trophyKirin",
+        "trophyRainbow",
+        "lyc2",
+        "lyc4",
+        "lyc6"
+      ]
+    },
+    {
+      "title": "変換高確移行率・規定ゲーム数でのCZ当選率・ラッシュ直撃",
+      "category": "そのほか",
+      "detail": "高設定ほど優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.9%・設定2 98.9%・設定3 101.3%・設定4 106.1%・設定5 110.4%・設定6 114.6%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 3
 }

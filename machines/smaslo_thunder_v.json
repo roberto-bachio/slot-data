@@ -13,7 +13,12 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 100.5,
+    "2": 102.0,
+    "5": 105.0,
+    "6": 108.1
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -265,8 +270,166 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/l_thunder_v/0/",
-    "https://pachiseven.jp/machines/7325/cutout/4"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/277.7・設定2 1/275.4・設定5 1/270.8・設定6 1/264.3",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/434.0・設定2 1/394.8・設定5 1/344.9・設定6 1/313.6",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/169.3・設定2 1/162.2・設定5 1/151.7・設定6 1/143.4",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ベルA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/16.3・設定2 1/15.8・設定5 1/15.3・設定6 1/14.8",
+      "support": "yes",
+      "note": "回数が多く集まるので重要",
+      "counters": [
+        "bellA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ベルB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/52.9・設定2 1/62.1・設定5 1/53.9・設定6 1/47.1",
+      "support": "yes",
+      "note": "設定6の次に設定1が出やすい",
+      "counters": [
+        "bellB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/108.3・設定2 1/109.6・設定5 1/99.6・設定6 1/101.9",
+      "support": "yes",
+      "note": "設定5が最も出やすい",
+      "counters": [
+        "suikaA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/322.8・設定2 1/329.3・設定5 1/296.5・設定6 1/303.4",
+      "support": "yes",
+      "note": "設定5が最も出やすい",
+      "counters": [
+        "suikaB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリーB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/13.2・設定2 1/12.1・設定5 1/12.5・設定6 1/12.2",
+      "support": "yes",
+      "note": "回数が多く集まる",
+      "counters": [
+        "cherryB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のベルB(下段)",
+      "category": "BB中",
+      "detail": "設定1 1/7.0・設定2 1/5.8・設定5 1/7.0・設定6 1/5.8",
+      "support": "yes",
+      "note": "偶数設定で出やすい(分母はBB中のベルとバラけ目の合計)",
+      "counters": [
+        "bbBellB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のベルC(上段)",
+      "category": "BB中",
+      "detail": "設定1 1/36.0・設定2 1/36.0・設定5 1/24.3・設定6 1/24.3",
+      "support": "yes",
+      "note": "設定5・6で出やすい",
+      "counters": [
+        "bbBellC"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のバラけ目",
+      "category": "BB中",
+      "detail": "設定1 1/10922.7・設定2 1/10922.7・設定5 1/436.9・設定6 1/436.9",
+      "support": "yes",
+      "note": "設定5・6で出やすい",
+      "counters": [
+        "bbBarake"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB終了画面のレアパターン",
+      "category": "示唆",
+      "detail": "放電・流星(1G連時)で設定2以上",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "bbEndRare"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB終了画面のイッカククン",
+      "category": "示唆",
+      "detail": "出現で設定5以上",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "rbEndIkkaku"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ボーナスの同時当選(成立役別)",
+      "category": "ボーナス当選の内訳",
+      "detail": "成立役ごとにわずかな設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 100.5%・設定2 102.0%・設定5 105.0%・設定6 108.1%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }

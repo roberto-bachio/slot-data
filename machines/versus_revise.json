@@ -99,6 +99,12 @@
       "rateBase": "rt2Games"
     },
     {
+      "id": "rt1Replay",
+      "label": "VSチャンス中 通常リプレイ",
+      "section": "RT詳細",
+      "rateBase": "rt1Games"
+    },
+    {
       "id": "bbBell",
       "label": "BB中 ベル",
       "ocrLabel": "ベル",
@@ -273,6 +279,27 @@
               }
             }
           ]
+        },
+        {
+          "id": "rt1Replay",
+          "name": "VSチャンス中 通常リプレイ",
+          "trials": {
+            "plus": [
+              "rt1Games"
+            ]
+          },
+          "note": "ボーナス同時当選分を除く",
+          "outcomes": [
+            {
+              "counter": "rt1Replay",
+              "denoms": {
+                "1": 3.0,
+                "2": 3.1,
+                "5": 3.3,
+                "6": 3.4
+              }
+            }
+          ]
         }
       ]
     },
@@ -323,32 +350,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "rbIn",
-      "name": "RB中",
-      "groups": [
-        {
-          "id": "rbKoyaku",
-          "name": "RB中小役",
-          "trials": {
-            "plus": [
-              "rbGames"
-            ]
-          },
-          "outcomes": [
-            {
-              "counter": "rbOneMai",
-              "denoms": {
-                "1": 8.0,
-                "2": 8.0,
-                "5": 7.0,
-                "6": 7.0
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "hints": [
@@ -370,8 +371,207 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/s_versus_rexse/0/",
-    "https://pachiseven.jp/machines/6430/cutout/4"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/292.6・設定2 1/284.9・設定5 1/275.4・設定6 1/264.3",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/374.5・設定2 1/341.3・設定5 1/319.7・設定6 1/292.6",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/164.3・設定2 1/155.3・設定5 1/148.0・設定6 1/138.9",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ベルA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/10.9・設定2 1/10.7・設定5 1/10.5・設定6 1/10.2",
+      "support": "yes",
+      "note": "回数が多く集まるので重要",
+      "counters": [
+        "bellA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ベルB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/20.9・設定2 1/21.2・設定5 1/20.3・設定6 1/20.6",
+      "support": "yes",
+      "counters": [
+        "bellB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/74.5・設定2 1/70.6・設定5 1/72.5・設定6 1/68.8",
+      "support": "yes",
+      "note": "偶数設定が高い",
+      "counters": [
+        "suikaA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリーB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/56.2・設定2 1/57.7・設定5 1/53.1・設定6 1/54.4",
+      "support": "yes",
+      "note": "設定6はサイトにより 1/54.4 と 1/54.1。1/54.4 を使用",
+      "counters": [
+        "cherryB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリーA",
+      "category": "通常時 小役",
+      "detail": "設定1・6の値だけ公表",
+      "support": "no",
+      "note": "全設定の値がそろっていないため未対応"
+    },
+    {
+      "title": "VSチャンス中のはずれ",
+      "category": "RT中",
+      "detail": "設定1 1/5.0・設定2 1/4.9・設定5 1/4.6・設定6 1/4.5",
+      "support": "yes",
+      "counters": [
+        "rt1Hazure"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "VSチャンス中の通常リプレイ",
+      "category": "RT中",
+      "detail": "設定1 1/3.0・設定2 1/3.1・設定5 1/3.3・設定6 1/3.4",
+      "support": "yes",
+      "note": "設定差は小さいが回数が集まる。カウンタで数える",
+      "counters": [
+        "rt1Replay"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "VSGAME中のはずれ",
+      "category": "RT中",
+      "detail": "設定1 1/10.1・設定2 1/9.4・設定5 1/8.7・設定6 1/8.1",
+      "support": "yes",
+      "note": "設定差が大きい",
+      "counters": [
+        "rt2Hazure"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "VSGAME中のRTリプレイ",
+      "category": "RT中",
+      "detail": "設定1 1/1.7・設定2〜6 1/1.8(小数1桁の表記)",
+      "support": "no",
+      "note": "値が小数1桁に丸められていて、設定差を正しく表せないため未対応"
+    },
+    {
+      "title": "BB中のチェリー+ベル揃い",
+      "category": "BB中",
+      "detail": "設定1 1/11.1・設定2 1/8.9・設定5 1/11.1・設定6 1/8.9",
+      "support": "yes",
+      "note": "偶数設定で出やすい(分母はBB中の小役の合計)",
+      "counters": [
+        "bbCherryBell"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中のチェリー+ベルはずれ",
+      "category": "BB中",
+      "detail": "設定1 1/256.0・設定2 1/128.0・設定5 1/256.0・設定6 1/128.0",
+      "support": "yes",
+      "note": "偶数設定で出やすい",
+      "counters": [
+        "bbCherryHazure"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中の中段チェリー",
+      "category": "BB中",
+      "detail": "設定6だけ 1/897.8(ほかの設定は 1/16384)",
+      "support": "yes",
+      "counters": [
+        "bbChudan"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中のはずれ(3連X停止で払い出しなし)",
+      "category": "示唆",
+      "detail": "出現で設定5以上(設定5・6 1/376.6)",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "rbHazure"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の1枚役",
+      "category": "RB中",
+      "detail": "設定1・2 1/8.0・設定5・6 1/7.0",
+      "support": "no",
+      "reliability": "single",
+      "note": "設定別の値が1つの解析サイトにしかないため判別には使わない。カウンタで数えることはできる"
+    },
+    {
+      "title": "RB終了画面のEND赤",
+      "category": "示唆",
+      "detail": "出現で設定2以上。当選時の状態とRB中の1枚役・はずれの回数で出現率が変わる",
+      "support": "partial",
+      "note": "「設定2以上」の確定だけ使う。状態・回数別の出現率は未対応",
+      "counters": [
+        "rbEndRed"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ボーナスの同時当選(成立役別)",
+      "category": "ボーナス当選の内訳",
+      "detail": "成立役ごとに設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 102.0%・設定2 104.0%・設定5 106.5%・設定6 109.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }

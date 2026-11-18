@@ -82,37 +82,83 @@
               }
             }
           ]
-        },
-        {
-          "id": "koyaku",
-          "name": "ぶどう確率",
-          "trials": {
-            "plus": [
-              "totalGames"
-            ]
-          },
-          "note": "ぶどう確率はメーカー発表値ではなく、解析サイトの独自調査による値",
-          "outcomes": [
-            {
-              "counter": "budou",
-              "denoms": {
-                "1": 6.05,
-                "2": 6.01,
-                "3": 5.98,
-                "4": 5.83,
-                "5": 5.81,
-                "6": 5.79
-              }
-            }
-          ]
         }
       ]
     }
   ],
   "hints": [],
-  "sources": [
-    "https://1geki.jp/slot/s_happyjuggler_v3/0/",
-    "https://nana-press.com/post/1595428/2"
+  "version": 3,
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/273.1・設定2 1/270.8・設定3 1/263.2・設定4 1/254.0・設定5 1/239.2・設定6 1/226.0",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/397.2・設定2 1/362.1・設定3 1/332.7・設定4 1/300.6・設定5 1/273.1・設定6 1/256.0",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/161.8・設定2 1/154.9・設定3 1/146.9・設定4 1/137.7・設定5 1/127.5・設定6 1/120.0",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ぶどう",
+      "category": "通常時 小役",
+      "detail": "設定1 1/6.05・設定2 1/6.01・設定3 1/5.98・設定4 1/5.83・設定5 1/5.81・設定6 1/5.79",
+      "support": "no",
+      "reliability": "single",
+      "note": "メーカー非公表で、設定別の値が1つの解析サイトにしかないため判別には使わない。カウンタで数えることはできる"
+    },
+    {
+      "title": "単独BIG・チェリー重複BIG",
+      "category": "ボーナス当選の内訳",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "単独REG・チェリー重複REG",
+      "category": "ボーナス当選の内訳",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "チェリー(重複なし)",
+      "category": "通常時 小役",
+      "detail": "設定差あり(メーカー非公表)",
+      "support": "no",
+      "note": "解析サイトの独自の推定値しかないため未対応。機種の複製・編集で自分で追加できる"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.0%・設定2 98.1%・設定3 99.9%・設定4 102.9%・設定5 105.8%・設定6 108.4%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
   ],
-  "version": 2
+  "summaryUpdated": "2026-11-18"
 }

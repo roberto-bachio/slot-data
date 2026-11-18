@@ -12,7 +12,14 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 98.2,
+    "2": 99.1,
+    "3": 101.1,
+    "4": 104.5,
+    "5": 107.0,
+    "6": 111.0
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -93,6 +100,21 @@
     {
       "id": "rbCutGoldChara",
       "label": "RB中カットイン 金(キャラあり)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "bbEnd2",
+      "label": "BB終了画面 銀枠",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "bbEnd4",
+      "label": "BB終了画面 金枠",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "bbEnd5",
+      "label": "BB終了画面 金枠(山佐キャラ・虹背景)",
       "section": "示唆(確定系)"
     }
   ],
@@ -272,11 +294,145 @@
         3,
         4
       ]
+    },
+    {
+      "counter": "bbEnd2",
+      "name": "BB終了画面 銀枠",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "bbEnd4",
+      "name": "BB終了画面 金枠",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "bbEnd5",
+      "name": "BB終了画面 金枠(山佐キャラ・虹背景)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/lb_kelot5/0/",
-    "https://nana-press.com/kaiseki/machine/1170/37889/",
-    "https://chonborista.com/slot/yamasa-slot/258812/"
-  ]
+  "summary": [
+    {
+      "title": "BB以上の回数(SBB+BB)",
+      "category": "ボーナス",
+      "detail": "設定1 1/232.4・設定2 1/230.76・設定3 1/229.15・設定4 1/218.45・設定5 1/215.58・設定6 1/204.8",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "RB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/350.46・設定2 1/341.33・設定3 1/324.44・設定4 1/299.25・設定5 1/274.21・設定6 1/239.18",
+      "support": "yes",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ベル",
+      "category": "通常時 小役",
+      "detail": "設定1 1/7.0・設定2 1/6.9・設定3 1/6.9・設定4 1/6.8・設定5 1/6.6・設定6 1/6.5",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "bell"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/24.2・設定2 1/23.9・設定3 1/22.8・設定4 1/22.2・設定5 1/21.6・設定6 1/21.0",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "平行オレンジ",
+      "category": "通常時 小役",
+      "detail": "設定1 1/91.4・設定2 1/90.5・設定3 1/89.5・設定4 1/87.7・設定5 1/86.8・設定6 1/84.9",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "orangeH"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "斜めオレンジ",
+      "category": "通常時 小役",
+      "detail": "設定1 1/187.3・設定2 1/184.1・設定3 1/181.0・設定4 1/177.1・設定5 1/171.1・設定6 1/163.0",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "orangeN"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "ケロットトロフィー 銅→設定2以上・ケロットトロフィー 銀→設定3以上・ケロットトロフィー 金→設定4以上・ケロットトロフィー ケロット柄→設定5以上・ケロットトロフィー 虹→設定6・RB中カットイン 銀→設定2以上・RB中カットイン 金→設定4以上・RB中カットイン 金(キャラあり)→設定5以上・BB終了画面 銀枠→設定2以上・BB終了画面 金枠→設定4以上・BB終了画面 金枠(山佐キャラ・虹背景)→設定5以上",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える",
+      "counters": [
+        "trophyCopper",
+        "trophySilver",
+        "trophyGold",
+        "trophyKerot",
+        "trophyRainbow",
+        "rbCutSilver",
+        "rbCutGold",
+        "rbCutGoldChara",
+        "bbEnd2",
+        "bbEnd4",
+        "bbEnd5"
+      ]
+    },
+    {
+      "title": "ボーナス色(赤頭・白頭)の割合・成立役ごとのボーナス当選割合",
+      "category": "そのほか",
+      "detail": "設定差あり",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "BB終了画面の青・赤枠、ボーナス確定画面(ラキモード)、フタバボーナス",
+      "category": "そのほか",
+      "detail": "奇数・偶数・高設定を示唆",
+      "support": "no",
+      "note": "期待度の示唆で確定ではないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 98.2%・設定2 99.1%・設定3 101.1%・設定4 104.5%・設定5 107.0%・設定6 111.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 3
 }

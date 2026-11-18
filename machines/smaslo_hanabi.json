@@ -473,12 +473,6 @@
       ]
     }
   ],
-  "sources": [
-    "https://pachiseven.jp/machines/7313",
-    "https://1geki.jp/slot/l_hanabi/0/",
-    "https://chonborista.com/slot/universal-slot/248529/",
-    "https://nana-press.com/kaiseki/machine/1094/"
-  ],
   "summary": [
     {
       "title": "BB確率",
@@ -487,7 +481,8 @@
       "support": "yes",
       "counters": [
         "bb"
-      ]
+      ],
+      "reliability": "official"
     },
     {
       "title": "RB確率",
@@ -497,7 +492,8 @@
       "note": "BBより設定差が大きい。設定6はBB:RBがほぼ1:1",
       "counters": [
         "rb"
-      ]
+      ],
+      "reliability": "official"
     },
     {
       "title": "ボーナス合算",
@@ -508,7 +504,8 @@
       "counters": [
         "bb",
         "rb"
-      ]
+      ],
+      "reliability": "official"
     },
     {
       "title": "風鈴A",
@@ -518,7 +515,8 @@
       "note": "回数が多く集まるので重要",
       "counters": [
         "furinA"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "風鈴B",
@@ -527,7 +525,8 @@
       "support": "yes",
       "counters": [
         "furinB"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "風鈴合算",
@@ -538,7 +537,8 @@
       "counters": [
         "furinA",
         "furinB"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "氷A",
@@ -548,7 +548,8 @@
       "note": "設定差はほぼない。設定6の値はサイトにより1/47.2の表記もある",
       "counters": [
         "koriA"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "氷B",
@@ -565,7 +566,8 @@
       "note": "設定差はほぼない(赤7BBとの同時当選あり)",
       "counters": [
         "cherryA1"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "チェリーA2",
@@ -575,7 +577,8 @@
       "note": "偶数設定がやや優遇",
       "counters": [
         "cherryA2"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "チェリーB",
@@ -584,7 +587,8 @@
       "support": "yes",
       "counters": [
         "cherryB"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "チェリーBのボーナス同時当選期待度",
@@ -594,7 +598,8 @@
       "note": "チェリーB成立時にボーナスへ当選した回数を数える(たまやチャレンジ経由を含む)",
       "counters": [
         "cherryBBonus"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "通常時リプレイ",
@@ -624,7 +629,8 @@
       "support": "yes",
       "counters": [
         "rt1Hazure"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "花火チャレンジ中 通常リプレイ",
@@ -634,7 +640,8 @@
       "note": "高設定ほど出にくい(移行リプレイ上のはずれで逆押し時のみ発生)",
       "counters": [
         "rt1Replay"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "花火GAME中 はずれ",
@@ -644,7 +651,8 @@
       "note": "花火チャレンジ中より設定差が大きい",
       "counters": [
         "rt2Hazure"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "花火GAME中 RTリプレイ",
@@ -653,7 +661,8 @@
       "support": "yes",
       "counters": [
         "rt2Replay"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "BB中 風鈴B(斜め揃い)",
@@ -664,7 +673,8 @@
       "counters": [
         "bbFurinB",
         "bbFurinA"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "BB中 バラケ目",
@@ -674,7 +684,8 @@
       "note": "出現で設定5以上の期待大",
       "counters": [
         "bbBarake"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "RB中 1枚役",
@@ -683,7 +694,8 @@
       "support": "yes",
       "counters": [
         "rbOneMai"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "RB中 バラケ目",
@@ -693,7 +705,8 @@
       "note": "出現で設定6の期待大",
       "counters": [
         "rbBarake"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "RB中 共通15枚役",
@@ -709,7 +722,8 @@
       "support": "yes",
       "counters": [
         "rbPeace"
-      ]
+      ],
+      "reliability": "matched"
     },
     {
       "title": "ピース終了画面の出現率(RB中1枚役の回数別)",
@@ -730,9 +744,10 @@
       "category": "参考",
       "detail": "設定1 98.6%・設定2 100.4%・設定5 103.0%・設定6 106.4%(完全攻略時は+1.6%)",
       "support": "yes",
-      "note": "判別結果の期待機械割の表示に使う"
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
     }
   ],
   "summaryUpdated": "2026-11-18",
-  "version": 2
+  "version": 3
 }

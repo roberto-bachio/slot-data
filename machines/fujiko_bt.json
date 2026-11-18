@@ -11,7 +11,13 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 100.2,
+    "2": 102.4,
+    "4": 106.2,
+    "5": 109.0,
+    "6": 111.2
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -76,6 +82,26 @@
     {
       "id": "intro5",
       "label": "キャラ紹介 赤ルパン+赤3人",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "fj2",
+      "label": "BB終了画面スタンプ 可・パチンコジャッジ8揃い",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "fj4",
+      "label": "BB終了画面スタンプ 良・ハルルナPUSH",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "fj5",
+      "label": "BB終了画面スタンプ 優",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "fj6",
+      "label": "BB終了画面スタンプ 極",
       "section": "示唆(確定系)"
     }
   ],
@@ -226,11 +252,153 @@
         2,
         4
       ]
+    },
+    {
+      "counter": "fj2",
+      "name": "BB終了画面スタンプ 可・パチンコジャッジ8揃い",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "fj4",
+      "name": "BB終了画面スタンプ 良・ハルルナPUSH",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "fj5",
+      "name": "BB終了画面スタンプ 優",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "fj6",
+      "name": "BB終了画面スタンプ 極",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/lb_fj2/0/",
-    "https://pachiseven.jp/machines/7305/cutout/4",
-    "https://chonborista.com/slot/amute/246917/"
-  ]
+  "summary": [
+    {
+      "title": "BB回数(SBBを除く)",
+      "category": "ボーナス",
+      "detail": "設定1 1/394.8・設定2 1/364.1・設定4 1/319.7・設定5 1/291.3・設定6 1/229.1",
+      "support": "yes",
+      "note": "SBBは設定差がないため含めない",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/321.3・設定2 1/304.8・設定4 1/278.9・設定5 1/252.1・設定6 1/227.6",
+      "support": "yes",
+      "note": "SBBは設定差がないため含めない",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "プラムA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/9.3・設定2 1/9.1・設定4 1/8.9・設定5 1/8.7・設定6 1/8.6",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "plumA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "プラムB",
+      "category": "通常時 小役",
+      "detail": "設定1 1/25.6・設定2 1/25.1・設定4 1/24.3・設定5 1/24.0・設定6 1/23.7",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "plumB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/53.1・設定2 1/51.8・設定4 1/49.3・設定5 1/48.2・設定6 1/46.7",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB中 斜めプラム",
+      "category": "BB中",
+      "detail": "設定1 1/4.5・設定2 1/4.3・設定4 1/4.15・設定5 1/4.0・設定6 1/4.0",
+      "support": "yes",
+      "note": "分母はSBB・BB中のゲーム数",
+      "counters": [
+        "bbNanamePlum"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "枚数調整成功時 不二子ボイス→設定5以上・キャラ紹介 赤3人(設定2以上のパターン)→設定2以上・キャラ紹介 赤ルパン+赤不二子→設定4以上・キャラ紹介 赤ルパン+赤3人→設定5以上・BB終了画面スタンプ 可・パチンコジャッジ8揃い→設定2以上・BB終了画面スタンプ 良・ハルルナPUSH→設定4以上・BB終了画面スタンプ 優→設定5以上・BB終了画面スタンプ 極→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える",
+      "counters": [
+        "voiceFujiko",
+        "intro2",
+        "intro4",
+        "intro5",
+        "fj2",
+        "fj4",
+        "fj5",
+        "fj6"
+      ]
+    },
+    {
+      "title": "特定ボーナス(チェリー同時当選)",
+      "category": "そのほか",
+      "detail": "成立役ごとに設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "RB中のキャラ紹介(奇数・偶数)",
+      "category": "そのほか",
+      "detail": "奇数・偶数設定を示唆",
+      "support": "no",
+      "note": "期待度の示唆で確定ではないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 100.2%・設定2 102.4%・設定4 106.2%・設定5 109.0%・設定6 111.2%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 3
 }

@@ -11,7 +11,13 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 97.9,
+    "2": 98.9,
+    "4": 104.5,
+    "5": 110.2,
+    "6": 114.9
+  },
   "counters": [
     {
       "id": "normalGames",
@@ -23,6 +29,31 @@
       "label": "AT初当り",
       "section": "初当り",
       "rateBase": "normalGames"
+    },
+    {
+      "id": "mt2",
+      "label": "AT終了画面 トロフィー 銅",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "mtEven",
+      "label": "舟券 銀(ホロ加工)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "mt4",
+      "label": "舟券 金・トロフィー 金・獲得枚数456枚",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "mt5",
+      "label": "トロフィー ケロット柄・獲得枚数803枚",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "mt6",
+      "label": "舟券 虹・トロフィー 虹・獲得枚数666枚",
+      "section": "示唆(確定系)"
     }
   ],
   "modes": [
@@ -55,9 +86,111 @@
       ]
     }
   ],
-  "hints": [],
-  "sources": [
-    "https://1geki.jp/slot/l_monkeyturn5/0/",
-    "https://pachiseven.jp/machines/6815/cutout/4"
-  ]
+  "hints": [
+    {
+      "counter": "mt2",
+      "name": "AT終了画面 トロフィー 銅",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "mtEven",
+      "name": "舟券 銀(ホロ加工)",
+      "meaning": "設定2・4・6",
+      "excludes": [
+        1,
+        5
+      ]
+    },
+    {
+      "counter": "mt4",
+      "name": "舟券 金・トロフィー 金・獲得枚数456枚",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "mt5",
+      "name": "トロフィー ケロット柄・獲得枚数803枚",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "mt6",
+      "name": "舟券 虹・トロフィー 虹・獲得枚数666枚",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "AT初当り",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/299.8・設定2 1/295.5・設定4 1/258.8・設定5 1/235.7・設定6 1/222.9",
+      "support": "yes",
+      "note": "分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "atHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "AT終了画面 トロフィー 銅→設定2以上・舟券 銀(ホロ加工)→設定2・4・6・舟券 金・トロフィー 金・獲得枚数456枚→設定4以上・トロフィー ケロット柄・獲得枚数803枚→設定5以上・舟券 虹・トロフィー 虹・獲得枚数666枚→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える",
+      "counters": [
+        "mt2",
+        "mtEven",
+        "mt4",
+        "mt5",
+        "mt6"
+      ]
+    },
+    {
+      "title": "弱レア役からのAT直撃・ライバルモード突入率",
+      "category": "そのほか",
+      "detail": "高設定ほど優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "AT終了後の即優出・激走チャージ中のEXアイテム当選率",
+      "category": "そのほか",
+      "detail": "高設定ほど優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "激走チャージ終了時のセリフ・AT終了画面のメダル・ラウンド開始画面",
+      "category": "そのほか",
+      "detail": "偶数・高設定を示唆",
+      "support": "no",
+      "note": "期待度の示唆で「設定N以上」の確定ではないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.9%・設定2 98.9%・設定4 104.5%・設定5 110.2%・設定6 114.9%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 3
 }

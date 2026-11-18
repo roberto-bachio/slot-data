@@ -10,7 +10,12 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 103.0,
+    "2": 103.8,
+    "5": 107.2,
+    "6": 111.5
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -38,6 +43,12 @@
     {
       "id": "suikaA",
       "label": "スイカA",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "luckyReach",
+      "label": "リーチ目役(T2・T3・A2・D2・G2)",
       "section": "通常時",
       "rateBase": "totalGames"
     },
@@ -70,6 +81,16 @@
       "id": "rbEnd6",
       "label": "RB終了画面 設定6濃厚の柄",
       "section": "示唆(確定系)"
+    },
+    {
+      "id": "bbSuika",
+      "label": "BB中 スイカ",
+      "section": "BB中"
+    },
+    {
+      "id": "bbUltra",
+      "label": "BB中 スイカでULTRA上乗せ",
+      "section": "BB中"
     }
   ],
   "modes": [
@@ -135,6 +156,55 @@
               }
             }
           ]
+        },
+        {
+          "id": "luckyReach",
+          "name": "設定差のあるリーチ目役",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "LUCKY INFO で当選契機を確かめて数える",
+          "outcomes": [
+            {
+              "counter": "luckyReach",
+              "denoms": {
+                "1": 624.2,
+                "2": 595.8,
+                "5": 478.4,
+                "6": 383.3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "bbUltra",
+          "name": "BB中スイカでのULTRA上乗せ",
+          "trials": {
+            "plus": [
+              "bbSuika"
+            ]
+          },
+          "note": "BB中のスイカ回数を分母にする",
+          "outcomes": [
+            {
+              "counter": "bbUltra",
+              "defaultZero": true,
+              "denoms": {
+                "1": 16384.0,
+                "2": 5461.3,
+                "5": 1213.6,
+                "6": 601.2
+              }
+            }
+          ]
         }
       ]
     }
@@ -195,8 +265,142 @@
       ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/l_discup_ur/0/",
-    "https://nana-press.com/kaiseki/machine/883/27467/"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/287.2・設定2 1/284.3・設定5 1/273.8・設定6 1/260.9",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/495.3・設定2 1/477.2・設定5 1/398.6・設定6 1/334.1",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/181.8・設定2 1/178.2・設定5 1/162.3・設定6 1/146.5",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "3枚役(7・星・星)",
+      "category": "通常時 小役",
+      "detail": "設定1 1/13.7・設定2 1/13.4・設定5 1/12.9・設定6 1/12.6",
+      "support": "yes",
+      "note": "回数が多く集まる",
+      "counters": [
+        "sanmai"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/59.6・設定2 1/59.1・設定5 1/57.0・設定6 1/54.4",
+      "support": "yes",
+      "note": "スイカBは全設定共通",
+      "counters": [
+        "suikaA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "設定差のあるリーチ目役(T2・T3・A2・D2・G2)",
+      "category": "通常時 小役",
+      "detail": "設定1 1/624.2・設定2 1/595.8・設定5 1/478.4・設定6 1/383.3",
+      "support": "yes",
+      "note": "ボーナス入賞時の LUCKY INFO で確かめてカウンタで数える",
+      "counters": [
+        "luckyReach"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/3276.8〜設定6 1/1927.5",
+      "support": "no",
+      "reliability": "single",
+      "note": "設定別の値が1つの解析サイトにしかないため未対応"
+    },
+    {
+      "title": "BB中スイカでのULTRA上乗せ",
+      "category": "BB中",
+      "detail": "設定1 1/16384.0・設定2 1/5461.3・設定5 1/1213.6・設定6 1/601.2",
+      "support": "yes",
+      "note": "設定1と6で大きな差。BB中のスイカ回数と一緒にカウンタで数える",
+      "counters": [
+        "bbUltra"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の演出(確定系)",
+      "category": "示唆",
+      "detail": "演出モードごとの示唆で設定2以上・5以上・6",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "rbEnd2",
+        "rbEnd5",
+        "rbEnd6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中の演出(奇数・偶数)",
+      "category": "示唆",
+      "detail": "奇数・偶数設定を示唆",
+      "support": "no",
+      "reliability": "single",
+      "note": "振り分けの数値が1つの解析サイトにしかないため未対応"
+    },
+    {
+      "title": "サミートロフィー(AT終了時)",
+      "category": "示唆",
+      "detail": "銅で設定2以上・キリン柄で設定5以上・虹で設定6",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "trophyCopper",
+        "trophyKirin",
+        "trophyRainbow"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "当選契機別のRB割合",
+      "category": "ボーナス当選の内訳",
+      "detail": "特定のリーチ目役・確定チェリー契機は高設定ほどRBが多い",
+      "support": "no",
+      "note": "契機ごとに分けて数える必要があり、今回は未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 103.0%・設定2 103.8%・設定5 107.2%・設定6 111.5%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }

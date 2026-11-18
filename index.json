@@ -13,7 +13,7 @@
         6
       ],
       "file": "machines/smaslo_hanabi.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": true,
       "keywords": [
         "ハナビ",
@@ -35,7 +35,7 @@
         6
       ],
       "file": "machines/shin_hanabi.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ハナビ",
@@ -43,7 +43,10 @@
         "はなび",
         "シンハナビ",
         "HANABI"
-      ]
+      ],
+      "summary": true,
+      "introduced": "2021-07-05",
+      "note": "検定切れ(2024-07)"
     },
     {
       "id": "versus_revise",
@@ -56,14 +59,17 @@
         6
       ],
       "file": "machines/versus_revise.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "バーサス",
         "リヴァイズ",
         "リバイズ",
         "VERSUS"
-      ]
+      ],
+      "summary": true,
+      "introduced": "2022-01-11",
+      "note": "検定切れ(2025-01)"
     },
     {
       "id": "new_getter_mouse",
@@ -76,14 +82,17 @@
         6
       ],
       "file": "machines/new_getter_mouse.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ゲッターマウス",
         "ゲッタマ",
         "ネズミ",
         "GETTER"
-      ]
+      ],
+      "summary": true,
+      "introduced": "2022-07-04",
+      "note": "検定切れ(2025-07)"
     },
     {
       "id": "cranky_crest",
@@ -96,14 +105,16 @@
         6
       ],
       "file": "machines/cranky_crest.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "クランキー",
         "クレスト",
         "コンドル",
         "CRANKY"
-      ]
+      ],
+      "summary": true,
+      "introduced": "2023-12-04"
     },
     {
       "id": "smaslo_thunder_v",
@@ -116,14 +127,16 @@
         6
       ],
       "file": "machines/smaslo_thunder_v.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "サンダー",
         "サンダーV",
         "THUNDER"
       ],
-      "note": "画像取り込みの項目名は仮"
+      "note": "画像取り込みの項目名は仮",
+      "summary": true,
+      "introduced": "2026-03-02"
     },
     {
       "id": "im_juggler_ex",
@@ -138,7 +151,7 @@
         6
       ],
       "file": "machines/im_juggler_ex.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "アイム",
@@ -147,7 +160,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2023-12)",
+      "summary": true,
+      "introduced": "2020-12-14"
     },
     {
       "id": "neo_im_juggler_ex",
@@ -162,7 +177,7 @@
         6
       ],
       "file": "machines/neo_im_juggler_ex.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ネオアイム",
@@ -170,7 +185,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2025-09-01"
     },
     {
       "id": "my_juggler_v",
@@ -185,7 +202,7 @@
         6
       ],
       "file": "machines/my_juggler_v.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "マイジャグ",
@@ -194,7 +211,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2024-12)",
+      "introduced": "2021-12-06",
+      "summary": true
     },
     {
       "id": "funky_juggler_2",
@@ -209,7 +228,7 @@
         6
       ],
       "file": "machines/funky_juggler_2.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ファンキー",
@@ -217,7 +236,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2024-10)",
+      "summary": true,
+      "introduced": "2021-10-04"
     },
     {
       "id": "happy_juggler_v3",
@@ -232,7 +253,7 @@
         6
       ],
       "file": "machines/happy_juggler_v3.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ハッピー",
@@ -241,7 +262,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2025-10)",
+      "summary": true,
+      "introduced": "2022-10-24"
     },
     {
       "id": "gogo_juggler_3",
@@ -256,7 +279,7 @@
         6
       ],
       "file": "machines/gogo_juggler_3.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ゴーゴー",
@@ -265,7 +288,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2026-07)",
+      "summary": true,
+      "introduced": "2023-07-03"
     },
     {
       "id": "juggler_girls_ss",
@@ -280,7 +305,7 @@
         6
       ],
       "file": "machines/juggler_girls_ss.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ガールズ",
@@ -289,7 +314,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2024-04-08"
     },
     {
       "id": "mr_juggler",
@@ -304,7 +331,7 @@
         6
       ],
       "file": "machines/mr_juggler.json",
-      "version": 2,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ミスター",
@@ -312,7 +339,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2024-07-22"
     },
     {
       "id": "ultra_miracle_juggler",
@@ -327,7 +356,7 @@
         6
       ],
       "file": "machines/ultra_miracle_juggler.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ウルミラ",
@@ -335,7 +364,9 @@
         "ジャグラー",
         "JUGGLER"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用・ボーナス確率のみ",
+      "summary": true,
+      "introduced": "2024-12-02"
     },
     {
       "id": "king_hanahana_30",
@@ -350,7 +381,7 @@
         6
       ],
       "file": "machines/king_hanahana_30.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "キンハナ",
@@ -358,7 +389,9 @@
         "ハナハナ",
         "HANAHANA"
       ],
-      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ・検定切れ(2026-03)",
+      "summary": true,
+      "introduced": "2023-03-20"
     },
     {
       "id": "dragon_hanahana_senko_30",
@@ -373,7 +406,7 @@
         6
       ],
       "file": "machines/dragon_hanahana_senko_30.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ドラハナ",
@@ -382,7 +415,9 @@
         "ハナハナ",
         "HANAHANA"
       ],
-      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ",
+      "summary": true,
+      "introduced": "2023-12-18"
     },
     {
       "id": "star_hanahana_30",
@@ -397,7 +432,7 @@
         6
       ],
       "file": "machines/star_hanahana_30.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "スタハナ",
@@ -405,7 +440,9 @@
         "ハナハナ",
         "HANAHANA"
       ],
-      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ"
+      "note": "カウンタ専用・ボーナス確率とREG終了時ランプ",
+      "summary": true,
+      "introduced": "2025-01-06"
     },
     {
       "id": "hanahana_houoh_tensho_30",
@@ -420,7 +457,7 @@
         6
       ],
       "file": "machines/hanahana_houoh_tensho_30.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ホウオウ",
@@ -429,7 +466,9 @@
         "ハナハナ",
         "HANAHANA"
       ],
-      "note": "カウンタ専用・ボーナス確率のみ"
+      "note": "カウンタ専用・ボーナス確率のみ・検定切れ(2025-01)",
+      "summary": true,
+      "introduced": "2022-01-24"
     },
     {
       "id": "smaslo_monkey_turn_v",
@@ -443,7 +482,7 @@
         6
       ],
       "file": "machines/smaslo_monkey_turn_v.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "モンキー",
@@ -451,7 +490,9 @@
         "モンキーターン5",
         "MONKEY"
       ],
-      "note": "カウンタ専用・AT初当り確率のみ"
+      "note": "カウンタ専用・AT初当り確率のみ",
+      "summary": true,
+      "introduced": "2023-12-04"
     },
     {
       "id": "disc_up_2",
@@ -464,14 +505,16 @@
         6
       ],
       "file": "machines/disc_up_2.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ディスクアップ",
         "ディスク",
         "DISCUP"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用・検定切れ(2025-01)",
+      "summary": true,
+      "introduced": "2022-01-24"
     },
     {
       "id": "disc_up_ultraremix",
@@ -484,7 +527,7 @@
         6
       ],
       "file": "machines/disc_up_ultraremix.json",
-      "version": 1,
+      "version": 2,
       "ocrVerified": false,
       "keywords": [
         "ディスクアップ",
@@ -492,7 +535,9 @@
         "ウルリミ",
         "DISCUP"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2025-01-20"
     },
     {
       "id": "fujiko_bt",
@@ -506,7 +551,7 @@
         6
       ],
       "file": "machines/fujiko_bt.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "不二子",
@@ -514,7 +559,9 @@
         "ルパン",
         "FUJIKO"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2025-12-22"
     },
     {
       "id": "kerotto_5_bt",
@@ -529,14 +576,16 @@
         6
       ],
       "file": "machines/kerotto_5_bt.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "ケロット",
         "けろっと",
         "KEROT"
       ],
-      "note": "カウンタ専用"
+      "note": "カウンタ専用",
+      "summary": true,
+      "introduced": "2026-07-06"
     },
     {
       "id": "smaslo_hokuto",
@@ -550,14 +599,16 @@
         6
       ],
       "file": "machines/smaslo_hokuto.json",
-      "version": 2,
+      "version": 4,
       "ocrVerified": false,
       "keywords": [
         "北斗",
         "ほくと",
         "HOKUTO"
       ],
-      "note": "カウンタ専用・初当りと小役確率、確定系の示唆"
+      "note": "カウンタ専用・初当りと小役確率、確定系の示唆・検定切れ(2026-04)",
+      "summary": true,
+      "introduced": "2023-04-03"
     },
     {
       "id": "smaslo_kabaneri_unato",
@@ -572,7 +623,7 @@
         6
       ],
       "file": "machines/smaslo_kabaneri_unato.json",
-      "version": 2,
+      "version": 4,
       "ocrVerified": false,
       "keywords": [
         "カバネリ",
@@ -580,7 +631,9 @@
         "うなと",
         "KABANERI"
       ],
-      "note": "カウンタ専用・初当りと下段ベル、確定系の示唆"
+      "note": "カウンタ専用・初当りと下段ベル、確定系の示唆",
+      "summary": true,
+      "introduced": "2026-03-02"
     },
     {
       "id": "tokyo_ghoul",
@@ -595,7 +648,7 @@
         6
       ],
       "file": "machines/tokyo_ghoul.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "東京喰種",
@@ -603,7 +656,9 @@
         "トーキョーグール",
         "GHOUL"
       ],
-      "note": "カウンタ専用・初当り確率と確定系の示唆"
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "summary": true,
+      "introduced": "2025-02-03"
     },
     {
       "id": "lycoris_recoil",
@@ -618,14 +673,16 @@
         6
       ],
       "file": "machines/lycoris_recoil.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "リコリコ",
         "リコリス",
         "LYCORIS"
       ],
-      "note": "カウンタ専用・初当り確率と確定系の示唆"
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "summary": true,
+      "introduced": "2026-09-07"
     },
     {
       "id": "hokuto_tensei_2",
@@ -640,7 +697,7 @@
         6
       ],
       "file": "machines/hokuto_tensei_2.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "北斗",
@@ -648,7 +705,9 @@
         "転生の章",
         "てんせい"
       ],
-      "note": "カウンタ専用・初当り確率と確定系の示唆"
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "summary": true,
+      "introduced": "2026-01-05"
     },
     {
       "id": "sengoku_otome_5",
@@ -663,14 +722,16 @@
         6
       ],
       "file": "machines/sengoku_otome_5.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "戦国乙女",
         "乙女",
         "おとめ"
       ],
-      "note": "カウンタ専用・初当り確率と確定系の示唆"
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "summary": true,
+      "introduced": "2026-06-08"
     },
     {
       "id": "monhun_rise_sunbreak",
@@ -685,7 +746,7 @@
         6
       ],
       "file": "machines/monhun_rise_sunbreak.json",
-      "version": 1,
+      "version": 3,
       "ocrVerified": false,
       "keywords": [
         "モンハン",
@@ -693,7 +754,9 @@
         "ライズ",
         "サンブレイク"
       ],
-      "note": "カウンタ専用・初当り確率と確定系の示唆"
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "summary": true,
+      "introduced": "2026-10-05"
     }
   ]
 }

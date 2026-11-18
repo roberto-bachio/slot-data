@@ -10,7 +10,12 @@
     5,
     6
   ],
-  "payout": {},
+  "payout": {
+    "1": 103.0,
+    "2": 104.5,
+    "5": 107.4,
+    "6": 108.6
+  },
   "counters": [
     {
       "id": "totalGames",
@@ -42,6 +47,16 @@
       "rateBase": "totalGames"
     },
     {
+      "id": "ishokuBB",
+      "label": "異色BB回数",
+      "section": "通常時"
+    },
+    {
+      "id": "featDt",
+      "label": "異色BB後 feat.DT当選",
+      "section": "通常時"
+    },
+    {
       "id": "trophyCopper",
       "label": "トロフィー 銅",
       "section": "示唆(確定系)"
@@ -55,6 +70,51 @@
       "id": "trophyRainbow",
       "label": "トロフィー 虹",
       "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbSc45",
+      "label": "RB中シナリオ45(通常時RB・DT当選時)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbSc46",
+      "label": "RB中シナリオ46(DT非当選時・AT中)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbSc47",
+      "label": "RB中シナリオ47(DT非当選時・AT中)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "rbSc48",
+      "label": "RB中シナリオ48(DT非当選時・AT中)",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "bitaSuccess",
+      "label": "真・技術介入 ビタ押し成功",
+      "section": "BB中"
+    },
+    {
+      "id": "juwanNashi",
+      "label": "ジュワン乗せナシ",
+      "section": "BB中"
+    },
+    {
+      "id": "rbBashun",
+      "label": "通常時RB 初回15枚役でバシュン+キャラ",
+      "section": "RB中"
+    },
+    {
+      "id": "atRb",
+      "label": "AT中RB回数",
+      "section": "RB中"
+    },
+    {
+      "id": "atRbBashun",
+      "label": "AT中RB 初回15枚役でバシュン+キャラ",
+      "section": "RB中"
     }
   ],
   "modes": [
@@ -120,6 +180,128 @@
               }
             }
           ]
+        },
+        {
+          "id": "ishoku",
+          "name": "異色BBの割合",
+          "trials": {
+            "plus": [
+              "bb"
+            ]
+          },
+          "note": "BB回数のうち異色BBの割合",
+          "outcomes": [
+            {
+              "counter": "ishokuBB",
+              "asPercent": true,
+              "denoms": {
+                "1": 25.3165,
+                "2": 22.8833,
+                "5": 14.6843,
+                "6": 13.1752
+              }
+            }
+          ]
+        },
+        {
+          "id": "featDt",
+          "name": "異色BB後のfeat.DT当選率",
+          "trials": {
+            "plus": [
+              "ishokuBB"
+            ]
+          },
+          "note": "通常時の異色BBのうち、feat.DTに当選した割合",
+          "outcomes": [
+            {
+              "counter": "featDt",
+              "asPercent": true,
+              "denoms": {
+                "1": 4.5045,
+                "2": 5.0,
+                "5": 8.0,
+                "6": 9.009
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbIn",
+      "name": "BB中",
+      "groups": [
+        {
+          "id": "juwan",
+          "name": "ジュワン乗せナシ",
+          "trials": {
+            "plus": [
+              "bitaSuccess"
+            ]
+          },
+          "note": "ビタ押し成功のうち、上乗せが発生しなかった回数",
+          "outcomes": [
+            {
+              "counter": "juwanNashi",
+              "defaultZero": true,
+              "denoms": {
+                "1": 4096,
+                "2": 1024,
+                "5": 512,
+                "6": 257
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rbIn",
+      "name": "RB中",
+      "groups": [
+        {
+          "id": "bashunNormal",
+          "name": "通常時RB バシュン+キャラ登場",
+          "trials": {
+            "plus": [
+              "rb"
+            ]
+          },
+          "note": "通常時のRB回数を分母にする(初回の15枚役で判定)",
+          "outcomes": [
+            {
+              "counter": "rbBashun",
+              "asPercent": true,
+              "denoms": {
+                "1": 32.2581,
+                "2": 18.1818,
+                "5": 9.434,
+                "6": 6.6667
+              }
+            }
+          ]
+        },
+        {
+          "id": "bashunAt",
+          "name": "AT中RB バシュン+キャラ登場",
+          "trials": {
+            "plus": [
+              "atRb"
+            ]
+          },
+          "note": "AT中のRB回数を分母にする(初回の15枚役で判定)",
+          "outcomes": [
+            {
+              "counter": "atRbBashun",
+              "asPercent": true,
+              "denoms": {
+                "1": 25.641,
+                "2": 9.7087,
+                "5": 6.0241,
+                "6": 4.5662
+              }
+            }
+          ]
         }
       ]
     }
@@ -151,10 +333,204 @@
         2,
         5
       ]
+    },
+    {
+      "counter": "rbSc45",
+      "name": "RB中シナリオ45(通常時RB・DT当選時)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "rbSc46",
+      "name": "RB中シナリオ46(DT非当選時・AT中)",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "rbSc47",
+      "name": "RB中シナリオ47(DT非当選時・AT中)",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "rbSc48",
+      "name": "RB中シナリオ48(DT非当選時・AT中)",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        5
+      ]
     }
   ],
-  "sources": [
-    "https://1geki.jp/slot/s_discup2/0/",
-    "https://nana-press.com/kaiseki/machine/271/7546/"
-  ]
+  "summary": [
+    {
+      "title": "BIG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/287.4・設定2 1/286.2・設定5 1/278.9・設定6 1/276.5",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "REG確率",
+      "category": "ボーナス",
+      "detail": "設定1 1/496.5・設定2 1/436.9・設定5 1/422.8・設定6 1/397.2",
+      "support": "yes",
+      "note": "BIGより設定差が大きい",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "ボーナス合算",
+      "category": "ボーナス",
+      "detail": "設定1 1/182.0・設定2 1/172.9・設定5 1/168.0・設定6 1/163.0",
+      "support": "yes",
+      "note": "BIG・REGを個別に使うので、合算も判別に含まれる",
+      "counters": [
+        "bb",
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "スイカA",
+      "category": "通常時 小役",
+      "detail": "設定1 1/62.1・設定2 1/59.8・設定5 1/59.3・設定6 1/56.7",
+      "support": "yes",
+      "note": "スイカBは全設定共通",
+      "counters": [
+        "suikaA"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/36.6・設定2 1/34.9・設定5 1/34.3・設定6 1/33.6",
+      "support": "yes",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "異色BBの割合",
+      "category": "ボーナス",
+      "detail": "異色BB 設定1 1/7281.8・設定2 1/6553.6・設定5 1/4096.0・設定6 1/3640.9(BB回数のうちの割合で判別)",
+      "support": "yes",
+      "note": "カウンタで数える",
+      "counters": [
+        "ishokuBB"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "異色BB後のfeat.DT当選率",
+      "category": "ボーナス",
+      "detail": "設定1 22.2%・設定2 20.0%・設定5 12.5%・設定6 11.1%",
+      "support": "yes",
+      "note": "通常時の異色BBのあと feat.DT に入らなければ高設定に期待。カウンタで数える",
+      "counters": [
+        "featDt"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ジュワン乗せナシ",
+      "category": "BB中",
+      "detail": "設定1 1/4096・設定2 1/1024・設定5 1/512・設定6 1/257",
+      "support": "yes",
+      "note": "ビタ押し成功の回数と一緒にカウンタで数える",
+      "counters": [
+        "juwanNashi"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "通常時RBのバシュン+キャラ登場",
+      "category": "RB中",
+      "detail": "設定1 3.1%・設定2 5.5%・設定5 10.6%・設定6 15.0%",
+      "support": "yes",
+      "note": "初回の15枚役で発生したときだけ数える。2回目以降はDT当選の合図",
+      "counters": [
+        "rbBashun"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "AT中RBのバシュン+キャラ登場",
+      "category": "RB中",
+      "detail": "設定1 3.9%・設定2 10.3%・設定5 16.6%・設定6 21.9%",
+      "support": "yes",
+      "note": "AT中のRB回数と一緒にカウンタで数える",
+      "counters": [
+        "atRbBashun"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中のキャラシナリオ(確定系)",
+      "category": "示唆",
+      "detail": "シナリオ45(DT当選時)で設定5以上、DT非当選時・AT中のシナリオ46で設定2以上・47で設定5以上・48で設定6",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "rbSc45",
+        "rbSc46",
+        "rbSc47",
+        "rbSc48"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "RB中のキャラシナリオ(奇数・偶数)",
+      "category": "示唆",
+      "detail": "シナリオ1・7は奇数、2・4は偶数を示唆",
+      "support": "no",
+      "note": "シナリオの種類が多く、状態ごとに振り分けが変わるため未対応"
+    },
+    {
+      "title": "サミートロフィー(AT終了時)",
+      "category": "示唆",
+      "detail": "銅で設定2以上・キリン柄で設定5以上・虹で設定6",
+      "support": "yes",
+      "note": "確定系としてカウンタで数える",
+      "counters": [
+        "trophyCopper",
+        "trophyKirin",
+        "trophyRainbow"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー+RBなど成立役別の同時当選",
+      "category": "ボーナス当選の内訳",
+      "detail": "成立役ごとに設定差あり",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割(完全攻略時)",
+      "category": "参考",
+      "detail": "設定1 103.0%・設定2 104.5%・設定5 107.4%・設定6 108.6%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18",
+  "version": 2
 }
