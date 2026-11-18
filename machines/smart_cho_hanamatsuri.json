@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "id": "smart_cho_hanamatsuri",
+  "name": "スマート沖スロ 超華祭",
+  "maker": "パイオニア",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.9,
+    "2": 99.8,
+    "4": 103.3,
+    "5": 106.3,
+    "6": 110.0
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bell3",
+      "label": "3枚ベル",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "whiteBonus",
+      "label": "白色点灯ボーナス",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "fWhite",
+      "label": "フェザーランプ 白",
+      "section": "ボーナス終了後"
+    },
+    {
+      "id": "fBlue",
+      "label": "フェザーランプ 青",
+      "section": "ボーナス終了後"
+    },
+    {
+      "id": "fYellow",
+      "label": "フェザーランプ 黄",
+      "section": "ボーナス終了後"
+    },
+    {
+      "id": "fGreen",
+      "label": "フェザーランプ 緑",
+      "section": "ボーナス終了後"
+    },
+    {
+      "id": "fRed",
+      "label": "フェザーランプ 赤",
+      "section": "ボーナス終了後"
+    },
+    {
+      "id": "fRainbow",
+      "label": "フェザーランプ 虹",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "seg2",
+      "label": "エンディング セグ 222・174",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "segNot2",
+      "label": "エンディング セグ 274",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "segNot4",
+      "label": "エンディング セグ 474",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "segNot5",
+      "label": "エンディング セグ 574",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "segEven",
+      "label": "エンディング セグ 246",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "seg4",
+      "label": "エンディング セグ 444・456",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "seg5",
+      "label": "エンディング セグ 555",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "seg6",
+      "label": "エンディング セグ 666",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 274,
+                "2": 266,
+                "4": 248,
+                "5": 234,
+                "6": 221
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 384,
+                "2": 364,
+                "4": 331,
+                "5": 304,
+                "6": 279
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数",
+          "outcomes": [
+            {
+              "counter": "bell3",
+              "denoms": {
+                "1": 27.3,
+                "2": 26.2,
+                "4": 25.2,
+                "5": 24.3,
+                "6": 23.4
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 43.7,
+                "2": 42.3,
+                "4": 41.0,
+                "5": 39.7,
+                "6": 38.6
+              }
+            }
+          ]
+        },
+        {
+          "id": "whiteBonus",
+          "name": "白色点灯ボーナス",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "ボーナス入賞時にMAXBETで確認(ハズレ目・1枚役・天井当選を含む)",
+          "outcomes": [
+            {
+              "counter": "whiteBonus",
+              "denoms": {
+                "1": 1381,
+                "2": 1177,
+                "4": 964,
+                "5": 909,
+                "6": 876
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bonusEnd",
+      "name": "ボーナス終了後",
+      "groups": [
+        {
+          "id": "feather",
+          "name": "フェザーランプの色",
+          "trials": {
+            "plus": [
+              "fWhite",
+              "fBlue",
+              "fYellow",
+              "fGreen",
+              "fRed",
+              "fRainbow"
+            ]
+          },
+          "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+          "outcomes": [
+            {
+              "counter": "fWhite",
+              "asPercent": true,
+              "denoms": {
+                "1": 250.0,
+                "2": 50.0,
+                "4": 50.0,
+                "5": 41.6667,
+                "6": 27.7778
+              }
+            },
+            {
+              "counter": "fBlue",
+              "asPercent": true,
+              "denoms": {
+                "1": 3.3557,
+                "2": 5.0,
+                "4": 3.4483,
+                "5": 5.2083,
+                "6": 4.1841
+              }
+            },
+            {
+              "counter": "fYellow",
+              "asPercent": true,
+              "denoms": {
+                "1": 5.0,
+                "2": 3.4483,
+                "4": 3.4483,
+                "5": 5.2083,
+                "6": 4.1841
+              }
+            },
+            {
+              "counter": "fGreen",
+              "asPercent": true,
+              "denoms": {
+                "1": 3.3557,
+                "2": 5.0,
+                "4": 5.0,
+                "5": 3.4014,
+                "6": 4.1841
+              }
+            },
+            {
+              "counter": "fRed",
+              "asPercent": true,
+              "denoms": {
+                "1": 5.0,
+                "2": 3.4483,
+                "4": 5.0,
+                "5": 3.4014,
+                "6": 4.1841
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "fRainbow",
+      "name": "フェザーランプ 虹",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "seg2",
+      "name": "エンディング セグ 222・174",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "segNot2",
+      "name": "エンディング セグ 274",
+      "meaning": "設定2以外",
+      "excludes": [
+        2
+      ]
+    },
+    {
+      "counter": "segNot4",
+      "name": "エンディング セグ 474",
+      "meaning": "設定4以外",
+      "excludes": [
+        4
+      ]
+    },
+    {
+      "counter": "segNot5",
+      "name": "エンディング セグ 574",
+      "meaning": "設定5以外",
+      "excludes": [
+        5
+      ]
+    },
+    {
+      "counter": "segEven",
+      "name": "エンディング セグ 246",
+      "meaning": "設定1・5以外",
+      "excludes": [
+        1,
+        5
+      ]
+    },
+    {
+      "counter": "seg4",
+      "name": "エンディング セグ 444・456",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "seg5",
+      "name": "エンディング セグ 555",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "seg6",
+      "name": "エンディング セグ 666",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "BB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/274・設定2 1/266・設定4 1/248・設定5 1/234・設定6 1/221",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "RB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/384・設定2 1/364・設定4 1/331・設定5 1/304・設定6 1/279",
+      "support": "yes",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "3枚ベル",
+      "category": "通常時 小役",
+      "detail": "設定1 1/27.3・設定2 1/26.2・設定4 1/25.2・設定5 1/24.3・設定6 1/23.4",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "bell3"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/43.7・設定2 1/42.3・設定4 1/41.0・設定5 1/39.7・設定6 1/38.6",
+      "support": "yes",
+      "note": "分母は総ゲーム数",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "白色点灯ボーナス",
+      "category": "通常時",
+      "detail": "設定1 1/1381・設定2 1/1177・設定4 1/964・設定5 1/909・設定6 1/876",
+      "support": "yes",
+      "note": "ボーナス入賞時にMAXBETで確認(ハズレ目・1枚役・天井当選を含む)",
+      "counters": [
+        "whiteBonus"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "フェザーランプ 白",
+      "category": "ボーナス終了後",
+      "detail": "設定1 0.4%・設定2 2.0%・設定4 2.0%・設定5 2.4%・設定6 3.6%",
+      "support": "yes",
+      "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+      "counters": [
+        "fWhite"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "フェザーランプ 青",
+      "category": "ボーナス終了後",
+      "detail": "設定1 29.8%・設定2 20.0%・設定4 29.0%・設定5 19.2%・設定6 23.9%",
+      "support": "yes",
+      "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+      "counters": [
+        "fBlue"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "フェザーランプ 黄",
+      "category": "ボーナス終了後",
+      "detail": "設定1 20.0%・設定2 29.0%・設定4 29.0%・設定5 19.2%・設定6 23.9%",
+      "support": "yes",
+      "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+      "counters": [
+        "fYellow"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "フェザーランプ 緑",
+      "category": "ボーナス終了後",
+      "detail": "設定1 29.8%・設定2 20.0%・設定4 20.0%・設定5 29.4%・設定6 23.9%",
+      "support": "yes",
+      "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+      "counters": [
+        "fGreen"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "フェザーランプ 赤",
+      "category": "ボーナス終了後",
+      "detail": "設定1 20.0%・設定2 29.0%・設定4 20.0%・設定5 29.4%・設定6 23.9%",
+      "support": "yes",
+      "note": "分母はボーナス終了後のフェザーランプの回数(白〜虹の合計)",
+      "counters": [
+        "fRed"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "フェザーランプ 虹→設定5以上・エンディング セグ 222・174→設定2以上・エンディング セグ 274→設定2以外・エンディング セグ 474→設定4以外・エンディング セグ 574→設定5以外・エンディング セグ 246→設定1・5以外・エンディング セグ 444・456→設定4以上・エンディング セグ 555→設定5以上・エンディング セグ 666→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "fRainbow",
+        "seg2",
+        "segNot2",
+        "segNot4",
+        "segNot5",
+        "segEven",
+        "seg4",
+        "seg5",
+        "seg6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "白7BB・ハイビスカスBBの内訳",
+      "category": "そのほか",
+      "detail": "高設定ほどハイビスカスBBが出やすい",
+      "support": "no",
+      "note": "1つの解析サイトでしか確認できないため未対応"
+    },
+    {
+      "title": "チェリー+RB・11枚ベル+BB",
+      "category": "そのほか",
+      "detail": "高設定ほど出やすい",
+      "support": "no",
+      "note": "台で見分けられない内訳を含むため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.9%・設定2 99.8%・設定4 103.3%・設定5 106.3%・設定6 110.0%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

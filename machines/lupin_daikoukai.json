@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "lupin_daikoukai",
+  "name": "Lルパン三世 大航海者の秘宝",
+  "maker": "平和",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.7,
+    "2": 99.1,
+    "3": 101.4,
+    "4": 106.1,
+    "5": 110.1,
+    "6": 114.3
+  },
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "firstHit",
+      "label": "初当り(合算)",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "atHit",
+      "label": "AT初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "lp2",
+      "label": "AT終了画面 可スタンプ",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lp3",
+      "label": "AT終了画面 吉スタンプ",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lp4",
+      "label": "AT終了画面 良スタンプ・ハルルナPUSH",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lp5",
+      "label": "AT終了画面 優スタンプ・ラウンド画面 主役は銭形パネル",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "lp6",
+      "label": "AT終了画面 極スタンプ・ラウンド画面 不二子2パネル",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "ボーナス・ATの合算。分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "firstHit",
+              "denoms": {
+                "1": 289.1,
+                "2": 275.6,
+                "3": 262.6,
+                "4": 233.9,
+                "5": 223.6,
+                "6": 216.3
+              }
+            }
+          ]
+        },
+        {
+          "id": "at",
+          "name": "AT初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "初当り(ボーナス・AT)と重なる部分がある",
+          "outcomes": [
+            {
+              "counter": "atHit",
+              "denoms": {
+                "1": 371.4,
+                "2": 353.8,
+                "3": 330.2,
+                "4": 300.3,
+                "5": 289.9,
+                "6": 274.9
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "lp2",
+      "name": "AT終了画面 可スタンプ",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "lp3",
+      "name": "AT終了画面 吉スタンプ",
+      "meaning": "設定3以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "lp4",
+      "name": "AT終了画面 良スタンプ・ハルルナPUSH",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "lp5",
+      "name": "AT終了画面 優スタンプ・ラウンド画面 主役は銭形パネル",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "lp6",
+      "name": "AT終了画面 極スタンプ・ラウンド画面 不二子2パネル",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "初当り(合算)",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/289.1・設定2 1/275.6・設定3 1/262.6・設定4 1/233.9・設定5 1/223.6・設定6 1/216.3",
+      "support": "yes",
+      "note": "ボーナス・ATの合算。分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "firstHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "AT初当り",
+      "category": "通常時",
+      "detail": "設定1 1/371.4・設定2 1/353.8・設定3 1/330.2・設定4 1/300.3・設定5 1/289.9・設定6 1/274.9",
+      "support": "yes",
+      "note": "初当り(ボーナス・AT)と重なる部分がある",
+      "counters": [
+        "atHit"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "AT終了画面 可スタンプ→設定2以上・AT終了画面 吉スタンプ→設定3以上・AT終了画面 良スタンプ・ハルルナPUSH→設定4以上・AT終了画面 優スタンプ・ラウンド画面 主役は銭形パネル→設定5以上・AT終了画面 極スタンプ・ラウンド画面 不二子2パネル→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "lp2",
+        "lp3",
+        "lp4",
+        "lp5",
+        "lp6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "CZ「ICPOチャレンジ」の突入率・成功率、強チェリーからの当選率",
+      "category": "そのほか",
+      "detail": "高設定ほど優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "ボーナス後のボイス・隠れ凪のセリフ",
+      "category": "そのほか",
+      "detail": "設定を示唆",
+      "support": "no",
+      "note": "サイトによって「確定」と「期待度」の扱いが異なるため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.7%・設定2 99.1%・設定3 101.4%・設定4 106.1%・設定5 110.1%・設定6 114.3%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

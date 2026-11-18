@@ -1035,6 +1035,155 @@
       "note": "カウンタ専用・初当り確率と確定系の示唆",
       "introduced": "2026-08-03",
       "summary": true
+    },
+    {
+      "id": "smaslo_hokuto_muso",
+      "name": "スマスロ真・北斗無双",
+      "maker": "サミー",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_hokuto_muso.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "北斗無双",
+        "真・北斗無双",
+        "ほくとむそう",
+        "無双"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2024-07-08",
+      "summary": true
+    },
+    {
+      "id": "smaslo_monhun_rise",
+      "name": "スマスロ モンスターハンターライズ",
+      "maker": "エンターライズ",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_monhun_rise.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "モンハン",
+        "モンハンライズ",
+        "モンスターハンター",
+        "ライズ"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2024-11-18",
+      "summary": true
+    },
+    {
+      "id": "smart_cho_hanamatsuri",
+      "name": "スマート沖スロ 超華祭",
+      "maker": "パイオニア",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/smart_cho_hanamatsuri.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "超華祭",
+        "華祭",
+        "はなまつり",
+        "スマート沖スロ",
+        "ハナハナ"
+      ],
+      "note": "カウンタ専用",
+      "introduced": "2024-11-18",
+      "summary": true
+    },
+    {
+      "id": "lupin_daikoukai",
+      "name": "Lルパン三世 大航海者の秘宝",
+      "maker": "平和",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/lupin_daikoukai.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ルパン",
+        "ルパン三世",
+        "大航海者",
+        "るぱん"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2024-12-02",
+      "summary": true
+    },
+    {
+      "id": "midori_don_revival",
+      "name": "スマスロ 緑ドン VIVA!情熱南米編 REVIVAL",
+      "maker": "ユニバーサルブロス",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/midori_don_revival.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "緑ドン",
+        "みどりどん",
+        "ドンちゃん",
+        "南米編"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2025-05-07",
+      "summary": true
+    },
+    {
+      "id": "zenigata_5",
+      "name": "L主役は銭形5",
+      "maker": "オリンピア",
+      "settings": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/zenigata_5.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "銭形",
+        "主役は銭形",
+        "ぜにがた",
+        "銭形5"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2025-10-06",
+      "summary": true
     }
   ]
 }

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "zenigata_5",
+  "name": "L主役は銭形5",
+  "maker": "オリンピア",
+  "ocrTitles": [],
+  "settings": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "2": 97.9,
+    "3": 99.0,
+    "4": 103.2,
+    "5": 107.1,
+    "6": 112.1
+  },
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "firstHit",
+      "label": "初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "zg3",
+      "label": "ボーナス終了画面 吉スタンプ・獲得333/1333枚OVER",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "zg4",
+      "label": "ボーナス終了画面 良スタンプ・獲得444/1444枚OVER",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "zg5",
+      "label": "ボーナス終了画面 優スタンプ・獲得555/1555枚OVER",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "zg6",
+      "label": "ボーナス終了画面 極スタンプ・獲得666/1666枚OVER",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "設定は2〜6の5段階。分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "firstHit",
+              "denoms": {
+                "2": 424.5,
+                "3": 416.4,
+                "4": 388.1,
+                "5": 375.9,
+                "6": 300.5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "zg3",
+      "name": "ボーナス終了画面 吉スタンプ・獲得333/1333枚OVER",
+      "meaning": "設定3以上",
+      "excludes": [
+        2
+      ]
+    },
+    {
+      "counter": "zg4",
+      "name": "ボーナス終了画面 良スタンプ・獲得444/1444枚OVER",
+      "meaning": "設定4以上",
+      "excludes": [
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "zg5",
+      "name": "ボーナス終了画面 優スタンプ・獲得555/1555枚OVER",
+      "meaning": "設定5以上",
+      "excludes": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "zg6",
+      "name": "ボーナス終了画面 極スタンプ・獲得666/1666枚OVER",
+      "meaning": "設定6",
+      "excludes": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "初当り",
+      "category": "ボーナス・AT",
+      "detail": "設定2 1/424.5・設定3 1/416.4・設定4 1/388.1・設定5 1/375.9・設定6 1/300.5",
+      "support": "yes",
+      "note": "設定は2〜6の5段階。分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "firstHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "ボーナス終了画面 吉スタンプ・獲得333/1333枚OVER→設定3以上・ボーナス終了画面 良スタンプ・獲得444/1444枚OVER→設定4以上・ボーナス終了画面 優スタンプ・獲得555/1555枚OVER→設定5以上・ボーナス終了画面 極スタンプ・獲得666/1666枚OVER→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "zg3",
+        "zg4",
+        "zg5",
+        "zg6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "通常時のデカ目(直撃)",
+      "category": "そのほか",
+      "detail": "設定2 1/21580.7〜設定6 1/5561.8(非前兆中)",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "エンディング中のボイス",
+      "category": "そのほか",
+      "detail": "設定を示唆",
+      "support": "no",
+      "note": "調査中の項目が多いため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定2 97.9%・設定3 99.0%・設定4 103.2%・設定5 107.1%・設定6 112.1%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

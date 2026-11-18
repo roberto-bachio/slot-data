@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "midori_don_revival",
+  "name": "スマスロ 緑ドン VIVA!情熱南米編 REVIVAL",
+  "maker": "ユニバーサルブロス",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.5,
+    "2": 98.6,
+    "3": 102.3,
+    "4": 105.8,
+    "5": 111.5,
+    "6": 114.9
+  },
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bonusHit",
+      "label": "ボーナス初当り(合算)",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "atHit",
+      "label": "AT初当り",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "jakuCherry",
+      "label": "弱チェリー",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "jakuNami",
+      "label": "弱波",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "reachReplay",
+      "label": "リーチ目リプレイ",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "md2",
+      "label": "エンディング トリック グウカワ",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "md4",
+      "label": "エンディング トリック ゼンインシュウゴウ",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "md5",
+      "label": "エンディング トリック オヤジ",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "md6",
+      "label": "エンディング トリック アオドン・ボーナス終了画面 実写ビリー",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "ボーナス初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "bonusHit",
+              "denoms": {
+                "1": 275.4,
+                "2": 274.0,
+                "3": 267.3,
+                "4": 251.1,
+                "5": 229.9,
+                "6": 223.4
+              }
+            }
+          ]
+        },
+        {
+          "id": "at",
+          "name": "AT初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "AT「アマゾンゲーム」。初当り(ボーナス・AT)と重なる部分がある",
+          "outcomes": [
+            {
+              "counter": "atHit",
+              "denoms": {
+                "1": 561.0,
+                "2": 555.7,
+                "3": 502.0,
+                "4": 464.4,
+                "5": 424.3,
+                "6": 400.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "通常時に数える",
+          "outcomes": [
+            {
+              "counter": "jakuCherry",
+              "denoms": {
+                "1": 72.8,
+                "2": 72.0,
+                "3": 71.2,
+                "4": 70.5,
+                "5": 68.3,
+                "6": 66.9
+              }
+            },
+            {
+              "counter": "jakuNami",
+              "denoms": {
+                "1": 109.2,
+                "2": 107.4,
+                "3": 105.7,
+                "4": 104.0,
+                "5": 102.4,
+                "6": 99.3
+              }
+            },
+            {
+              "counter": "reachReplay",
+              "denoms": {
+                "1": 2978.9,
+                "2": 2978.9,
+                "3": 2520.6,
+                "4": 2520.6,
+                "5": 2048.0,
+                "6": 2048.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "md2",
+      "name": "エンディング トリック グウカワ",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "md4",
+      "name": "エンディング トリック ゼンインシュウゴウ",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "counter": "md5",
+      "name": "エンディング トリック オヤジ",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "counter": "md6",
+      "name": "エンディング トリック アオドン・ボーナス終了画面 実写ビリー",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "ボーナス初当り(合算)",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/275.4・設定2 1/274.0・設定3 1/267.3・設定4 1/251.1・設定5 1/229.9・設定6 1/223.4",
+      "support": "yes",
+      "note": "分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "bonusHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "AT初当り",
+      "category": "通常時",
+      "detail": "設定1 1/561.0・設定2 1/555.7・設定3 1/502.0・設定4 1/464.4・設定5 1/424.3・設定6 1/400.8",
+      "support": "yes",
+      "note": "AT「アマゾンゲーム」。初当り(ボーナス・AT)と重なる部分がある",
+      "counters": [
+        "atHit"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "弱チェリー",
+      "category": "通常時 小役",
+      "detail": "設定1 1/72.8・設定2 1/72.0・設定3 1/71.2・設定4 1/70.5・設定5 1/68.3・設定6 1/66.9",
+      "support": "yes",
+      "note": "通常時に数える",
+      "counters": [
+        "jakuCherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "弱波",
+      "category": "通常時 小役",
+      "detail": "設定1 1/109.2・設定2 1/107.4・設定3 1/105.7・設定4 1/104.0・設定5 1/102.4・設定6 1/99.3",
+      "support": "yes",
+      "note": "通常時に数える",
+      "counters": [
+        "jakuNami"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "リーチ目リプレイ",
+      "category": "通常時 小役",
+      "detail": "設定1 1/2978.9・設定2 1/2978.9・設定3 1/2520.6・設定4 1/2520.6・設定5 1/2048.0・設定6 1/2048.0",
+      "support": "yes",
+      "note": "通常時に数える",
+      "counters": [
+        "reachReplay"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "エンディング トリック グウカワ→設定2以上・エンディング トリック ゼンインシュウゴウ→設定4以上・エンディング トリック オヤジ→設定5以上・エンディング トリック アオドン・ボーナス終了画面 実写ビリー→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "md2",
+        "md4",
+        "md5",
+        "md6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "ボーナス終了画面(女の子・全員集合)、XRチャレンジ失敗時のセリフ",
+      "category": "そのほか",
+      "detail": "設定2以上・4以上など",
+      "support": "no",
+      "note": "サイトによって「確定」と「期待度」の扱いが異なるため未対応"
+    },
+    {
+      "title": "チェリー以外からの高確移行",
+      "category": "そのほか",
+      "detail": "設定5・6で優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.5%・設定2 98.6%・設定3 102.3%・設定4 105.8%・設定5 111.5%・設定6 114.9%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}
