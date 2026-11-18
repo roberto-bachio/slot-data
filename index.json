@@ -864,6 +864,177 @@
       "note": "カウンタ専用・ボーナス確率とREG終了時ランプ(-30版と同じ数値)",
       "introduced": "2025-01-20",
       "summary": true
+    },
+    {
+      "id": "smaslo_takoslot",
+      "name": "スマスロ タコスロ",
+      "maker": "ユニバーサルブロス",
+      "settings": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "file": "machines/smaslo_takoslot.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "タコスロ",
+        "たこすろ",
+        "TAKO"
+      ],
+      "note": "カウンタ専用",
+      "introduced": "2026-09-07",
+      "summary": true
+    },
+    {
+      "id": "sao2",
+      "name": "スロット ソードアート・オンラインⅡ",
+      "maker": "大都技研",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/sao2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "SAO",
+        "SAO2",
+        "ソードアート",
+        "ソードアートオンライン"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2026-06-08",
+      "summary": true
+    },
+    {
+      "id": "enen_2",
+      "name": "Lパチスロ 炎炎ノ消防隊2",
+      "maker": "SANKYO",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/enen_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "炎炎",
+        "炎炎ノ消防隊",
+        "えんえん",
+        "炎炎2"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2026-02-02",
+      "summary": true
+    },
+    {
+      "id": "seiya_ougon",
+      "name": "L聖闘士星矢 黄金十二宮",
+      "maker": "サンスリー",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/seiya_ougon.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "聖闘士星矢",
+        "せいんとせいや",
+        "星矢",
+        "黄金十二宮"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2026-11-02",
+      "summary": true
+    },
+    {
+      "id": "gojieva_2",
+      "name": "Lパチスロ ゴジラ対エヴァンゲリオン2",
+      "maker": "ビスティ",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/gojieva_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ゴジエヴァ",
+        "ゴジエヴァ2",
+        "ゴジラ",
+        "エヴァンゲリオン"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2026-11-02",
+      "summary": true
+    },
+    {
+      "id": "valvrave_2",
+      "name": "Lパチスロ 革命機ヴァルヴレイヴ2",
+      "maker": "SANKYO",
+      "settings": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/valvrave_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "ヴァルヴレイヴ",
+        "ヴヴヴ",
+        "ヴヴヴ2",
+        "ヴァルヴレイヴ2"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2025-11-04",
+      "summary": true
+    },
+    {
+      "id": "toaru_index_2",
+      "name": "スマスロ とある魔術の禁書目録2",
+      "maker": "藤商事",
+      "settings": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "file": "machines/toaru_index_2.json",
+      "version": 1,
+      "ocrVerified": false,
+      "keywords": [
+        "とある",
+        "禁書目録",
+        "インデックス",
+        "インデックス2"
+      ],
+      "note": "カウンタ専用・初当り確率と確定系の示唆",
+      "introduced": "2026-08-03",
+      "summary": true
     }
   ]
 }

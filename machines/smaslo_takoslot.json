@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "smaslo_takoslot",
+  "name": "スマスロ タコスロ",
+  "maker": "ユニバーサルブロス",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 100.7,
+    "2": 102.6,
+    "5": 105.5,
+    "6": 108.5
+  },
+  "counters": [
+    {
+      "id": "totalGames",
+      "label": "総ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "bb",
+      "label": "BB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "rb",
+      "label": "RB回数",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "plum",
+      "label": "プラム",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "suika",
+      "label": "スイカ(合算)",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "cherry",
+      "label": "チェリー(合算)",
+      "section": "通常時",
+      "rateBase": "totalGames"
+    },
+    {
+      "id": "bbEndNight0",
+      "label": "BB終了画面 夜(タコゲーム0回のとき)",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "bonus",
+          "name": "ボーナス確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "outcomes": [
+            {
+              "counter": "bb",
+              "denoms": {
+                "1": 324.4,
+                "2": 318.1,
+                "5": 309.1,
+                "6": 297.9
+              }
+            },
+            {
+              "counter": "rb",
+              "denoms": {
+                "1": 352.3,
+                "2": 336.1,
+                "5": 312.1,
+                "6": 300.6
+              }
+            }
+          ]
+        },
+        {
+          "id": "koyaku",
+          "name": "小役確率",
+          "trials": {
+            "plus": [
+              "totalGames"
+            ]
+          },
+          "note": "分母は総ゲーム数。スイカ・チェリーはA・Bなどの合算",
+          "outcomes": [
+            {
+              "counter": "plum",
+              "denoms": {
+                "1": 9.8,
+                "2": 9.7,
+                "5": 9.4,
+                "6": 9.0
+              }
+            },
+            {
+              "counter": "suika",
+              "denoms": {
+                "1": 60.0,
+                "2": 56.2,
+                "5": 53.0,
+                "6": 50.0
+              }
+            },
+            {
+              "counter": "cherry",
+              "denoms": {
+                "1": 22.9,
+                "2": 21.9,
+                "5": 21.0,
+                "6": 20.1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "bbEndNight0",
+      "name": "BB終了画面 夜(タコゲーム0回のとき)",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "BB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/324.4・設定2 1/318.1・設定5 1/309.1・設定6 1/297.9",
+      "support": "yes",
+      "counters": [
+        "bb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "RB回数",
+      "category": "ボーナス",
+      "detail": "設定1 1/352.3・設定2 1/336.1・設定5 1/312.1・設定6 1/300.6",
+      "support": "yes",
+      "counters": [
+        "rb"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "プラム",
+      "category": "通常時 小役",
+      "detail": "設定1 1/9.8・設定2 1/9.7・設定5 1/9.4・設定6 1/9.0",
+      "support": "yes",
+      "note": "分母は総ゲーム数。スイカ・チェリーはA・Bなどの合算",
+      "counters": [
+        "plum"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "スイカ(合算)",
+      "category": "通常時 小役",
+      "detail": "設定1 1/60.0・設定2 1/56.2・設定5 1/53.0・設定6 1/50.0",
+      "support": "yes",
+      "note": "分母は総ゲーム数。スイカ・チェリーはA・Bなどの合算",
+      "counters": [
+        "suika"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "チェリー(合算)",
+      "category": "通常時 小役",
+      "detail": "設定1 1/22.9・設定2 1/21.9・設定5 1/21.0・設定6 1/20.1",
+      "support": "yes",
+      "note": "分母は総ゲーム数。スイカ・チェリーはA・Bなどの合算",
+      "counters": [
+        "cherry"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "BB終了画面 夜(タコゲーム0回のとき)→設定2以上",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "bbEndNight0"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "BB終了画面 夜(レアパターン)の出現率",
+      "category": "そのほか",
+      "detail": "高設定ほど出やすい(タコゲームの入賞回数で変わる)",
+      "support": "no",
+      "note": "タコゲームの入賞回数ごとに分けて数える必要があるため未対応。0回で出れば設定2以上として数える"
+    },
+    {
+      "title": "スイカA・B、チェリーB・C(個別)",
+      "category": "そのほか",
+      "detail": "設定差あり",
+      "support": "no",
+      "note": "ユニメモで条件を満たさないと数えられないため合算で判別する"
+    },
+    {
+      "title": "BB中のリプレイ＋タコゲーム同時成立",
+      "category": "そのほか",
+      "detail": "設定5・6で出やすい",
+      "support": "no",
+      "note": "1つの解析サイトでしか確認できないため未対応"
+    },
+    {
+      "title": "プラム・チェリーのボーナス同時当選",
+      "category": "そのほか",
+      "detail": "高設定ほど期待度が高い",
+      "support": "no",
+      "note": "台で見分けられない内訳のため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 100.7%・設定2 102.6%・設定5 105.5%・設定6 108.5%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}

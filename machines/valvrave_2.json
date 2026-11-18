@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "valvrave_2",
+  "name": "Lパチスロ 革命機ヴァルヴレイヴ2",
+  "maker": "SANKYO",
+  "ocrTitles": [],
+  "settings": [
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "payout": {
+    "1": 97.7,
+    "2": 99.3,
+    "4": 104.7,
+    "5": 110.8,
+    "6": 114.9
+  },
+  "counters": [
+    {
+      "id": "normalGames",
+      "label": "通常時ゲーム数",
+      "section": "基本情報"
+    },
+    {
+      "id": "firstHit",
+      "label": "初当り(合算)",
+      "section": "通常時",
+      "rateBase": "normalGames"
+    },
+    {
+      "id": "vv2",
+      "label": "CZ・ボーナス終了画面 紫枠・ATゲーム数 +22G",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "vv4",
+      "label": "CZ・ボーナス終了画面 銀枠・ATゲーム数 +44G・獲得456枚OVER",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "vv5",
+      "label": "獲得555枚OVER",
+      "section": "示唆(確定系)"
+    },
+    {
+      "id": "vv6",
+      "label": "CZ・ボーナス終了画面 金枠・ATゲーム数 +66G・獲得666枚OVER",
+      "section": "示唆(確定系)"
+    }
+  ],
+  "modes": [
+    {
+      "id": "normal",
+      "name": "通常時",
+      "groups": [
+        {
+          "id": "hit",
+          "name": "初当り",
+          "trials": {
+            "plus": [
+              "normalGames"
+            ]
+          },
+          "note": "革命ボーナス・決戦ボーナス・AT直撃の合算。分母は通常時のゲーム数(AT中は含めない)",
+          "outcomes": [
+            {
+              "counter": "firstHit",
+              "denoms": {
+                "1": 476,
+                "2": 473,
+                "4": 464,
+                "5": 459,
+                "6": 456
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "counter": "vv2",
+      "name": "CZ・ボーナス終了画面 紫枠・ATゲーム数 +22G",
+      "meaning": "設定2以上",
+      "excludes": [
+        1
+      ]
+    },
+    {
+      "counter": "vv4",
+      "name": "CZ・ボーナス終了画面 銀枠・ATゲーム数 +44G・獲得456枚OVER",
+      "meaning": "設定4以上",
+      "excludes": [
+        1,
+        2
+      ]
+    },
+    {
+      "counter": "vv5",
+      "name": "獲得555枚OVER",
+      "meaning": "設定5以上",
+      "excludes": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "counter": "vv6",
+      "name": "CZ・ボーナス終了画面 金枠・ATゲーム数 +66G・獲得666枚OVER",
+      "meaning": "設定6",
+      "excludes": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "title": "初当り(合算)",
+      "category": "ボーナス・AT",
+      "detail": "設定1 1/476・設定2 1/473・設定4 1/464・設定5 1/459・設定6 1/456",
+      "support": "yes",
+      "note": "革命ボーナス・決戦ボーナス・AT直撃の合算。分母は通常時のゲーム数(AT中は含めない)",
+      "counters": [
+        "firstHit"
+      ],
+      "reliability": "official"
+    },
+    {
+      "title": "確定系の示唆",
+      "category": "示唆",
+      "detail": "CZ・ボーナス終了画面 紫枠・ATゲーム数 +22G→設定2以上・CZ・ボーナス終了画面 銀枠・ATゲーム数 +44G・獲得456枚OVER→設定4以上・獲得555枚OVER→設定5以上・CZ・ボーナス終了画面 金枠・ATゲーム数 +66G・獲得666枚OVER→設定6",
+      "support": "yes",
+      "note": "出現した回数をカウンタで数える(2サイトで同じ内容を確認)",
+      "counters": [
+        "vv2",
+        "vv4",
+        "vv5",
+        "vv6"
+      ],
+      "reliability": "matched"
+    },
+    {
+      "title": "CZ確率",
+      "category": "そのほか",
+      "detail": "全設定共通(1/324)",
+      "support": "no",
+      "note": "設定差がないため判別には使わない"
+    },
+    {
+      "title": "BAR揃い時のAT直撃・特殊テーブル・ハラキリドライブ",
+      "category": "そのほか",
+      "detail": "高設定ほど優遇",
+      "support": "no",
+      "note": "状態や契機ごとに数える必要があり、カウンタでの判別が難しいため未対応"
+    },
+    {
+      "title": "サブモニターのバッフェ",
+      "category": "そのほか",
+      "detail": "奇数・偶数を示唆",
+      "support": "no",
+      "note": "期待度の示唆で「設定N以上」の確定ではないため未対応"
+    },
+    {
+      "title": "機械割",
+      "category": "参考",
+      "detail": "設定1 97.7%・設定2 99.3%・設定4 104.7%・設定5 110.8%・設定6 114.9%",
+      "support": "yes",
+      "note": "判別結果の期待機械割の表示に使う",
+      "reliability": "official"
+    }
+  ],
+  "summaryUpdated": "2026-11-18"
+}
